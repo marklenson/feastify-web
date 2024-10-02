@@ -1,0 +1,181 @@
+.App {
+  text-align: center;
+}
+.eventpage {
+  height: 100vh;
+}
+.footer {
+  margin-top: 7rem;
+}
+.landinghead {
+  background-color: black;
+  color: white;
+  width: 100vw !important;
+  height: 50vh;
+}
+
+.landinghead span {
+  color: #FB9D00; 
+}
+
+.landingbody {
+  width: 100vw !important;
+  height: 40vh;
+}
+
+.landingbuttons {
+  margin-top: 8rem;
+  text-align: center; 
+}
+
+.landing-btn {
+  background-color: white;
+  border-color: #FB9D00;
+  border-radius: 5rem;
+  border-style: solid;
+  width: 20rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.landing-btn:hover {
+  background-color: #F6F6F6;
+  border-color: #FB9D00;
+  border-style: solid;
+  color: #FB9D00;
+  border-color: white;
+}
+.calendar {
+width: 100%;
+max-width: 400px; /* Adjust as per your layout */
+margin: auto;
+padding: 1rem;
+}
+
+.selectmonth {
+    border-style: none;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.selectmonth:hover{
+    border-style: none;
+}
+
+.selectmonth option {
+    border-style: none;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+gap: 10px; /* Increase the gap for better spacing */
+}
+
+.days {
+font-size: 1.2rem;
+text-align: center;
+color:#FB9D00;
+padding: 0.5rem 0;
+font-weight: bold;
+}
+
+.day-box {
+font-size: 1rem;
+text-align: center;
+border-style: none;
+padding: 0.5rem 0;
+background-color: white;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+day-box:hover {
+background-color: #FB9D00;
+color: white;
+}
+
+.day-box.selected {
+color: #FB9D00;
+}
+
+.empty-cell {
+background-color: transparent;
+}
+
+.select-month {
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.calendar-btn {
+    border-radius: 5rem !important;
+    border-style: none;
+    background-color: #FB9D00;
+}
+
+.service-header {
+    margin-top: 8rem;
+}
+
+.table-service {
+margin-top: 5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.table-service th {
+    color: #FB9D00;
+}
+
+.table-service table {
+border-collapse: collapse;
+width: 50%;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.table-service th, 
+.table-service td {
+border: 1px solid #dddddd;
+text-align: center;
+padding: 12px 15px;
+}
+
+.table-service th {
+font-size: 1.2rem;
+}
+
+.table-service td {
+font-size: 1rem;
+}
+
+.table-service input[type="radio"] {
+transform: scale(1.2);
+margin: 5px;
+}
+
+
+h1 {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 1rem;
+color: #333;
+}
+
+h5 {
+text-align: center;
+font-size: 1.2rem;
+margin-bottom: 3rem;
+color: #777;
+}
+
+  
+.error {
+    color: red;
+}
+  
