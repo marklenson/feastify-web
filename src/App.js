@@ -1,5 +1,5 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { useState, useEffect, useRef } from 'react';
+// import { useState, useEffect, useRef } from 'react';
 import Navbar from './components/navbar/navbar.v2';
 import Landingpage from './pages/landingpage/landing-page.v2';
 import AboutUs from './pages/aboutus/about-us';
@@ -18,13 +18,13 @@ import Oven from './components/mischellenous/oven';
 import StoveType from './components/mischellenous/stovetype';
 import ChefChat from './components/mischellenous/chefchat';
 import ContactInfo from './components/mischellenous/contactinfo';
-import ClientLogin from './components/login/clientLogin';
+// import ClientLogin from './components/login/clientLogin';
 import ChefRegister from './components/login/ChefRegister';
 import ContactUs from './pages/contact/contact-us';
 import ExperienceBooking from './components/experiences/experience';
 import ChefProfile from './components/profiles/chefprofile';
 import Checkout from './components/checkout/checkout';
-import ChefLogin from './components/login/chefLogin';
+// import ChefLogin from './components/login/chefLogin';
 import Footer from "./components/footer/footer.v3";
 import Banner from "./components/promotion/banner";
 import Chat from './components/chat/chat';
@@ -32,10 +32,12 @@ import Unauthorized from './components/unauthorized/unauthorized';
 import RoleBasedRoute from './components/Role/role';
 import ClientProfile from './components/profiles/clientprofile';
 import ScrollToTop from './components/scrollToTop';
+import "./App.css"
 
 export const BASE_URL = 'http://localhost:3000/api';
 
 function App() {
+  
   // const [authToken, setAuthToken] = useState(sessionStorage.getItem('Token'));
   // const logoutTimerRef = useRef(null);
 
