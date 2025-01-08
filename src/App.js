@@ -85,7 +85,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div style={{font: 'Nunito'}}>
         <Banner/>
         <Navbar/>
         <ScrollToTop />
