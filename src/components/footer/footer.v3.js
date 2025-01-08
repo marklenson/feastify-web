@@ -1,7 +1,6 @@
-import footerLogo from '../../assets/logo/footer-logo-.png'
+import footerLogo from '../../assets/logo/footer-logo.svg'
 import { Link } from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 import {faTiktok, faInstagram, faLinkedin, faCcVisa, faApplePay, faCcMastercard} from '@fortawesome/free-brands-svg-icons';
 
 const eventData = "https://docs.google.com/forms/d/e/1FAIpQLScd4TSKuvPKH8dXynOnOT3JTJDDyxd0Ghsy7451PMyqSLCmmw/viewform"
@@ -18,7 +17,7 @@ export default function Footer() {
                     <div className="row">
                         <div className="col-md-6 d-flex flex-column align-items-center align-items-md-start p-2">
                             <img src={footerLogo} alt="Footer Logo" style={{
-                                objectFit: 'scale-down',
+                                objectFit: 'contain',
                                 height: '200px',
                             }}/>
                         </div>
