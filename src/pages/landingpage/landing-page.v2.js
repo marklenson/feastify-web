@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+// import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {Link} from 'react-router-dom'
 import col1a from '../../assets/images/img-col-1.png';
 import col2a from '../../assets/images/img-col-2.png';
@@ -43,58 +43,59 @@ export default function LandingPage() {
 
     return (
         <>
-            <section className="container d-flex flex-column align-items-center mb-4">
-                <p className="mt-5 display-4 fw-medium text-center">
-                    Your <span style={{color: '#FB9D00'}}>Event</span>
-                    , Our <span style={{color: '#FB9D00'}}>Culinary</span> Magic
+            <section className="container d-flex flex-column align-items-center mb-4 mt-5" style={{height: 'auto'}}>
+                <p className="mt-4 display-4 fw-medium text-center">
+                    Your <span style={{color: '#FB9D00', fontWeight: '550'}}>Event</span>
+                    , Our <span style={{color: '#FB9D00', fontWeight: '550'}}>Culinary</span> Magic
                 </p>
-                <p className="fs-5 text-center" style={{font: "Nunito"}}>
+                <p className="fs-5 text-center mt-3" style={{font: "Nunito"}}>
                     “Elevate your event with unforgettable dishes and seamless service.
                     We make every corporate and private gatherings extraordinary with a
                     touch of premium culinary magic.”
                 </p>
 
-                <Link to={eventData} className="btn rounded-pill w-25 py-3 bg-black text-white mt-2 fs-4" style={{fontFamily: 'Nunito'}}>
+                <Link to={eventData} className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto mt-auto fs-5" style={{fontFamily: 'Nunito'}}>
                     Book Event Catering
                 </Link>
-            </section>
-
-            <section className="container mb-5">
-                <div className="row">
-                    <div className="col-md-3 rounded-4 p-1 overflow-hidden">
-                        <div className="rounded-4" style={{
-                            backgroundImage: `url(${col1a})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            height: '16rem'
-                        }}/>
-                    </div>
-                    <div className="col-md-3 rounded-4 p-1 overflow-hidden">
-                        <div className="rounded-4" style={{
-                            backgroundImage: `url(${col2a})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            height: '16rem'
-                        }}/>
-                    </div>
-                    <div className="col-md-3 rounded-4 p-1 overflow-hidden">
-                        <div className="rounded-4" style={{
-                            backgroundImage: `url(${col3a})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            height: '16rem'
-                        }}/>
-                    </div>
-                    <div className="col-md-3 rounded-4 p-1 overflow-hidden">
-                        <div className="rounded-4" style={{
-                            backgroundImage: `url(${col4a})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            height: '16rem'
-                        }}/>
+                <div className="container mt-5 mb-5">
+                    <div className="row">
+                        <div className="col-md-3 rounded-4 p-1 overflow-hidden">
+                            <div className="rounded-4" style={{
+                                backgroundImage: `url(${col1a})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                height: '16rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-3 rounded-4 p-1 overflow-hidden">
+                            <div className="rounded-4" style={{
+                                backgroundImage: `url(${col2a})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                height: '16rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-3 rounded-4 p-1 overflow-hidden">
+                            <div className="rounded-4" style={{
+                                backgroundImage: `url(${col3a})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                height: '16rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-3 rounded-4 p-1 overflow-hidden">
+                            <div className="rounded-4" style={{
+                                backgroundImage: `url(${col4a})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                height: '16rem'
+                            }}/>
+                        </div>
                     </div>
                 </div>
             </section>
+
+            
 
             <section className="container mb-5 bg-black rounded-4">
                 <div className="row p-3">
@@ -206,7 +207,7 @@ export default function LandingPage() {
                            style={{font: 'Nunito', color: '#FB9D00'}}>
                             Mediterranean Cuisine
                         </p>
-                        <p className="fs-6 text-center" style={{font: 'Nunito', marginTop: '2rem'}}>
+                        <p className="fs-6 text-center" style={{font: 'Nunito'}}>
                             To me, food is an art form, and every meal should be as beautiful as it is delicious.
                         </p>
 
@@ -220,7 +221,7 @@ export default function LandingPage() {
                             backgroundImage: `url(${chef4})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
-                            height: '18.5rem'
+                            height: '20rem'
                         }}/>
                         <p className="fs-5 text-center fw-medium my-0" style={{font: 'Nunito'}}>
                             Chef Leila Abdallah
@@ -229,7 +230,7 @@ export default function LandingPage() {
                            style={{font: 'Nunito', color: '#FB9D00'}}>
                             Africa Fusion Cuisine
                         </p>
-                        <p className="fs-6 text-center" style={{font: 'Nunito' , marginTop: '2rem'}}>
+                        <p className="fs-6 text-center" style={{font: 'Nunito'}}>
                             Cooking is storytelling, and every dish shares a chapter of culture and passion.
                         </p>
 
@@ -308,9 +309,9 @@ export default function LandingPage() {
             <section className="container mb-5 bg-black rounded-4">
                 <div className="d-flex flex-column align-items-center p-5 m-3">
                     <p className="fs-1 fw-bold text-white text-center" style={{fontFamily: 'Nunito'}}>
-                        Delight in every bite, <span style={{color: '#FB9D00'}}>Every Occasion.</span>
+                        Delight in Every Bite, <span style={{color: '#FB9D00'}}>Every Occasion.</span>
                     </p>
-                    <p className="fs-6 text-white text-center" style={{fontFamily: 'Nunito'}}>
+                    <p className="fs-5 text-white text-center" style={{fontFamily: 'Nunito'}}>
                         Our chefs pride themselves on offering a premium catering experience with<br/>
                         colorful, modern, and imaginative dishes, including corporate and event<br/>
                         catering
@@ -497,7 +498,7 @@ export default function LandingPage() {
                     <p className="fs-3 text-center text-uppercase" style={{fontFamily: 'Nunito', color: '#FB9D00'}}>
                         Let us make your event memorable
                     </p>
-                    <p className="fs-6 text-white text-center" style={{fontFamily: 'Nunito'}}>
+                    <p className="fs-5 text-white text-center" style={{fontFamily: 'Nunito'}}>
                         Can’t find the answer you’re looking for? Please chat to our friendly team.
                     </p>
                     <Link to={whatsappContact} className="btn bg-white text-black px-5 py-3 fw-medium rounded-pill">
