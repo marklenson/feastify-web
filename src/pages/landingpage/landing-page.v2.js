@@ -1,3 +1,4 @@
+import React, {useRef} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {Link} from 'react-router-dom'
@@ -15,13 +16,31 @@ import brand3 from '../../assets/images/brand-7.png';
 import brand4 from '../../assets/images/brand-4.png';
 import brand5 from '../../assets/images/brand-5.png';
 import brand6 from '../../assets/images/brand-6.png';
+import useScrollTriggeredCountUp  from "../../components/useScrollTriggeredCountUp";
 
 const eventData = "https://docs.google.com/forms/d/e/1FAIpQLScd4TSKuvPKH8dXynOnOT3JTJDDyxd0Ghsy7451PMyqSLCmmw/viewform"
 const whatsappContact = "wa.link/9yfb0t"
 const callContact = "tel:0711749149"
 const emailContact = "mailto:hi@thefeastify.com"
 
-export default function landingPage() {
+export default function LandingPage() {
+    const corporateEventsRef = useRef(null);
+    const privateEventsRef = useRef(null);
+    const fiveStarRef = useRef(null);
+    const dishesServedRef = useRef(null);
+    const clientsRef = useRef(null);
+    const countCorporate = useScrollTriggeredCountUp(corporateEventsRef, 124);
+    const countPrivate = useScrollTriggeredCountUp(privateEventsRef, 106);
+    const countFiveStar = useScrollTriggeredCountUp(fiveStarRef, 1);
+    const dishesCount = useScrollTriggeredCountUp(dishesServedRef, 8);
+    const clientsCount = useScrollTriggeredCountUp(clientsRef, 98);
+
+    useScrollTriggeredCountUp(corporateEventsRef, 124);
+    useScrollTriggeredCountUp(privateEventsRef, 106);
+    useScrollTriggeredCountUp(fiveStarRef, 1);
+    useScrollTriggeredCountUp(dishesServedRef, 8);
+    useScrollTriggeredCountUp(clientsRef, 98);
+
     return (
         <>
             <section className="container d-flex flex-column align-items-center mb-4">
@@ -79,43 +98,43 @@ export default function landingPage() {
 
             <section className="container mb-5 bg-black rounded-4">
                 <div className="row p-3">
-                    <div className="col">
+                    <div className="col" ref={corporateEventsRef}>
                         <p className="fs-2 fw-medium text-center mb-0" style={{
                             font: 'Nunito',
                             color: '#FB9D00'
-                        }}>124+</p>
+                        }}>{countCorporate}+</p>
                         <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Corporate Events<br/>Catered
                             Perfectly</p>
                     </div>
-                    <div className="col">
+                    <div className="col" ref={privateEventsRef}>
                         <p className="fs-2 fw-medium text-center mb-0" style={{
                             font: 'Nunito',
                             color: '#FB9D00'
-                        }}>106+</p>
+                        }}>{countPrivate}+</p>
                         <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Private Events<br/>Catered
                             Perfectly</p>
                     </div>
-                    <div className="col">
+                    <div className="col" ref={fiveStarRef}>
                         <p className="fs-2 fw-medium text-center mb-0" style={{
                             font: 'Nunito',
                             color: '#FB9D00'
-                        }}>1k+</p>
+                        }}>{countFiveStar}k+</p>
                         <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Five Star Private<br/>Chefs
                             Onboard</p>
                     </div>
-                    <div className="col">
+                    <div className="col"ref={dishesServedRef}>
                         <p className="fs-2 fw-medium text-center mb-0" style={{
                             font: 'Nunito',
                             color: '#FB9D00'
-                        }}>8k+</p>
+                        }}>{dishesCount}k+</p>
                         <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Dishes Served<br/>With
                             Passion</p>
                     </div>
-                    <div className="col">
+                    <div className="col" ref={clientsRef}>
                         <p className="fs-2 fw-medium text-center mb-0" style={{
                             font: 'Nunito',
                             color: '#FB9D00'
-                        }}>98%</p>
+                        }}>{clientsCount}%</p>
                         <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Of Our Clients<br/>Recommend
                             Us</p>
                     </div>
