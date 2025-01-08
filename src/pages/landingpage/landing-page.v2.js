@@ -55,6 +55,7 @@ export default function LandingPage() {
                 </p>
 
                 <Link to={eventData} className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto mt-auto fs-5" style={{fontFamily: 'Nunito'}}>
+
                     Book Event Catering
                 </Link>
                 <div className="container mt-5 mb-5">
