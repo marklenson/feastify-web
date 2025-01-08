@@ -16,8 +16,8 @@ export default function Footer() {
             <section>
                 <div className="container d-flex flex-column">
                     <div className="row">
-                        <div className="col-md-6 d-flex align-items-center p-2">
-                            <img src={footerLogo} alt="Footer Logo" className='mx-auto' style={{
+                        <div className="col-md-6 d-flex flex-column align-items-center align-items-md-start p-2">
+                            <img src={footerLogo} alt="Footer Logo" style={{
                                 objectFit: 'scale-down',
                                 height: '200px',
                             }}/>
