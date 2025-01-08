@@ -36,50 +36,50 @@ import ScrollToTop from './components/scrollToTop';
 export const BASE_URL = 'http://localhost:3000/api';
 
 function App() {
-  const [authToken, setAuthToken] = useState(sessionStorage.getItem('Token'));
-  const logoutTimerRef = useRef(null);
+  // const [authToken, setAuthToken] = useState(sessionStorage.getItem('Token'));
+  // const logoutTimerRef = useRef(null);
 
-  const logoutUser = () => {
-    sessionStorage.removeItem('Token');
-    sessionStorage.removeItem('Role');
-    setAuthToken(null);
-    if (logoutTimerRef.current) clearTimeout(logoutTimerRef.current); 
-    alert('You have been logged out due to inactivity');
-  };
+  // const logoutUser = () => {
+  //   sessionStorage.removeItem('Token');
+  //   sessionStorage.removeItem('Role');
+  //   setAuthToken(null);
+  //   if (logoutTimerRef.current) clearTimeout(logoutTimerRef.current); 
+  //   alert('You have been logged out due to inactivity');
+  // };
 
-  const resetLogoutTimer = () => {
-    if (logoutTimerRef.current) {
-      clearTimeout(logoutTimerRef.current);
-    }
-    logoutTimerRef.current = setTimeout(logoutUser, 30 * 60 * 1000); 
-  };
+  // const resetLogoutTimer = () => {
+  //   if (logoutTimerRef.current) {
+  //     clearTimeout(logoutTimerRef.current);
+  //   }
+  //   logoutTimerRef.current = setTimeout(logoutUser, 30 * 60 * 1000); 
+  // };
 
-  useEffect(() => {
-    const handleUserActivity = () => {
-      resetLogoutTimer();
-    };
+  // useEffect(() => {
+  //   const handleUserActivity = () => {
+  //     resetLogoutTimer();
+  //   };
 
-    window.addEventListener('mousemove', handleUserActivity);
-    window.addEventListener('keypress', handleUserActivity);
-    window.addEventListener('click', handleUserActivity);
-    window.addEventListener('scroll', handleUserActivity);
+  //   window.addEventListener('mousemove', handleUserActivity);
+  //   window.addEventListener('keypress', handleUserActivity);
+  //   window.addEventListener('click', handleUserActivity);
+  //   window.addEventListener('scroll', handleUserActivity);
 
-    resetLogoutTimer();
+  //   resetLogoutTimer();
 
-    return () => {
-      window.removeEventListener('mousemove', handleUserActivity);
-      window.removeEventListener('keypress', handleUserActivity);
-      window.removeEventListener('click', handleUserActivity);
-      window.removeEventListener('scroll', handleUserActivity);
-      if (logoutTimerRef.current) {
-        clearTimeout(logoutTimerRef.current);
-      }
-    };
-  }, [resetLogoutTimer]);
+  //   return () => {
+  //     window.removeEventListener('mousemove', handleUserActivity);
+  //     window.removeEventListener('keypress', handleUserActivity);
+  //     window.removeEventListener('click', handleUserActivity);
+  //     window.removeEventListener('scroll', handleUserActivity);
+  //     if (logoutTimerRef.current) {
+  //       clearTimeout(logoutTimerRef.current);
+  //     }
+  //   };
+  // }, [resetLogoutTimer]);
 
-  const PrivateRoute = ({ element: Element }) => {
-    return authToken ? <Element /> : <Navigate to="/login" />;
-  };
+  // const PrivateRoute = ({ element: Element }) => {
+  //   return authToken ? <Element /> : <Navigate to="/login" />;
+  // };
 
   return (
     <>
@@ -105,8 +105,8 @@ function App() {
             /> 
           {/* Public routes */}
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/login" element={<ClientLogin setAuthToken={setAuthToken} />} />
-          <Route path="/chef-login" element={<ChefLogin setAuthToken={setAuthToken} />} />
+          {/* <Route path="/login" element={<ClientLogin setAuthToken={setAuthToken} />} />
+          <Route path="/chef-login" element={<ChefLogin setAuthToken={setAuthToken} />} /> */}
           <Route path="/chef-register" element={<ChefRegister />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/aboutus" element={<AboutUs />} />

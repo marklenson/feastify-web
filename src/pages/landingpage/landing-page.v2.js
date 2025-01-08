@@ -187,7 +187,7 @@ export default function landingPage() {
                            style={{font: 'Nunito', color: '#FB9D00'}}>
                             Mediterranean Cuisine
                         </p>
-                        <p className="fs-6 text-center mt-0 mb-3" style={{font: 'Nunito'}}>
+                        <p className="fs-6 text-center" style={{font: 'Nunito', marginTop: '2rem'}}>
                             To me, food is an art form, and every meal should be as beautiful as it is delicious.
                         </p>
 
@@ -201,7 +201,7 @@ export default function landingPage() {
                             backgroundImage: `url(${chef4})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
-                            height: '20rem'
+                            height: '18.5rem'
                         }}/>
                         <p className="fs-5 text-center fw-medium my-0" style={{font: 'Nunito'}}>
                             Chef Leila Abdallah
@@ -210,7 +210,7 @@ export default function landingPage() {
                            style={{font: 'Nunito', color: '#FB9D00'}}>
                             Africa Fusion Cuisine
                         </p>
-                        <p className="fs-6 text-center mt-0 mb-3" style={{font: 'Nunito'}}>
+                        <p className="fs-6 text-center" style={{font: 'Nunito' , marginTop: '2rem'}}>
                             Cooking is storytelling, and every dish shares a chapter of culture and passion.
                         </p>
 
@@ -311,7 +311,7 @@ export default function landingPage() {
                         <div className="accordion accordion-flush" id='accordionLeft'>
                             <div className="accordion-item">
                                 <h2 className="accordion-header" id="headingOne">
-                                    <button className="accordion-button collapsed fs-5 fw-light" type="button"
+                                    <button className="accordion-button collapsed fs-5" type="button"
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne" aria-expanded="false"
                                             aria-controls="collapseOne" style={{font: 'Nunito'}}>
@@ -400,7 +400,7 @@ export default function landingPage() {
                         <div className="accordion accordion-flush" id='accordionRight'>
                             <div className="accordion-item">
                                 <h2 className="accordion-header" id="headingSeven">
-                                    <button className="accordion-button collapsed fs-5 fw-light" type="button"
+                                    <button className="accordion-button collapsed fs-5" type="button"
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapseSeven" aria-expanded="false"
                                             aria-controls="collapseSeven" style={{font: 'Nunito'}}>
