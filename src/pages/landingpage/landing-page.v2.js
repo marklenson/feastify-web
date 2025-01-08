@@ -1,6 +1,4 @@
 import React, {useRef} from 'react';
-// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-// import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {Link} from 'react-router-dom'
 import col1a from '../../assets/images/img-col-1.png';
 import col2a from '../../assets/images/img-col-2.png';
