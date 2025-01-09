@@ -41,7 +41,7 @@ export default function LandingPage() {
 
     return (
         <>
-            <section className="container d-flex flex-column align-items-center" style={{height: 'auto'}}>
+            <section className="container d-flex flex-column align-items-center mt-5" style={{height: 'auto'}}>
                 <p className="mt-4 display-3 fw-bold text-center text-capitalize">
                     Your <span style={{color: '#FB9D00', fontWeight: '550'}}>Event</span>
                     , Our <span style={{color: '#FB9D00', fontWeight: '550'}}>Culinary</span> Magic!
@@ -56,7 +56,7 @@ export default function LandingPage() {
                     Book Event Catering
                 </Link>
 
-                <div className="container mt-2 mb-5">
+                <div className="container mt-5 mb-5">
                     <div className="row">
                         <div className="col-md-3 rounded-4 p-1 overflow-hidden">
                             <div className="rounded-4" style={{

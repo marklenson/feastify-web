@@ -66,15 +66,14 @@ export default function Footer() {
                             <p className="mt-3 fs-5 fw-medium" style={{font: 'Nunito', color: '#FB9D00'}}>Payment
                                 Accepted</p>
                             <div className="d-flex justify-content-center justify-content-md-start">
-                                <img src={visa} className="img-fluid" alt="Visa" style={{height: '24px'}}/>
-                                <img src={mastercard} className="img-fluid mx-3" alt="Mastercard"
-                                     style={{height: '24px'}}/>
-                                <img src={applepay} className="img-fluid me-auto" alt="Apple Pay" style={{height: '24px'}}/>
+                                <img src={visa} className="img-fluid" alt="Visa" style={{fontSize: '24px'}}/>
+                                <img src={mastercard} className="img-fluid mx-3" alt="Mastercard" style={{fontSize: '24px'}}/>
+                                <img src={applepay} className="img-fluid me-auto" alt="Apple Pay" style={{fontSize: '24px'}}/>
                             </div>
                         </div>
 
                     </div>
-                    <hr/>
+                    <hr style={{color: 'black'}} />
                     <div className="d-flex flex-column align-items-center mb-3">
                         <div className="d-flex flex-row mb-3" style={{onHover: 'red'}}>
                             <a href="https://www.tiktok.com/@thefeastify" target="_blank" rel="noopener noreferrer">
