@@ -42,7 +42,7 @@ export default function LandingPage() {
     return (
         <>
             <section className="container d-flex flex-column align-items-center" style={{height: 'auto'}}>
-                <p className="mt-4 display-3 fw-bold text-center text-capitalize">
+                <p className="mt-4 display-2 fw-bold text-center text-capitalize">
                     Your <span style={{color: '#FB9D00', fontWeight: '550'}}>Event</span>
                     , Our <span style={{color: '#FB9D00', fontWeight: '550'}}>Culinary</span> Magic!
                 </p>
@@ -52,12 +52,12 @@ export default function LandingPage() {
                     touch of premium culinary magic.”
                 </p>
 
-                <Link to={chefBooking} className="btn bg-black text-white px-5 py-3 rounded-pill mt-2 mb-2 fs-5"
+                <Link to={chefBooking} className="btn bg-black text-white px-5 py-3 rounded-pill mt-3 mb-4 fs-5"
                       style={{fontFamily: 'Nunito'}}>
                     Book Event Catering
                 </Link>
 
-                <div className="container mt-2 mb-5">
+                <div className="container mt-4 mb-5">
                     <div className="row">
                         <div className="col-md-3 rounded-4 p-1 overflow-hidden">
                             <div className="rounded-4" style={{
@@ -95,8 +95,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-
-            <section className="container mb-5 bg-black rounded-4">
+            <section className="container mt-3 mb-5 bg-black rounded-4">
                 <div className="row p-3">
                     <div className="col" ref={corporateEventsRef}>
                         <p className="fs-2 fw-medium text-center mb-0" style={{
@@ -141,7 +140,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="container mb-5">
+            <section className="container mt-5 mb-5">
                 <p className="fs-1 fw-bold text-center text-capitalize" style={{font: 'Nunito'}}>
                     A taste of the talent we offer
                 </p>
@@ -166,8 +165,8 @@ export default function LandingPage() {
                         </p>
 
                         <Link to={chefBooking}
-                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto mt-auto">
-                            Book Chef
+                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto">
+                            Book A private chef
                         </Link>
                     </div>
                     <div className="col-md-3 d-flex flex-column mb-2" style={{height: '35rem'}}>
@@ -189,8 +188,8 @@ export default function LandingPage() {
                         </p>
 
                         <Link to={chefBooking}
-                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto mt-auto">
-                            Book Chef
+                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto">
+                            Book A private chef
                         </Link>
                     </div>
                     <div className="col-md-3 d-flex flex-column mb-2" style={{height: '35rem'}}>
@@ -212,8 +211,8 @@ export default function LandingPage() {
                         </p>
 
                         <Link to={chefBooking}
-                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto mt-auto">
-                            Book Chef
+                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto">
+                            Book A private chef
                         </Link>
                     </div>
                     <div className="col-md-3 d-flex flex-column mb-2" style={{height: '35rem'}}>
@@ -235,14 +234,14 @@ export default function LandingPage() {
                         </p>
 
                         <Link to={chefBooking}
-                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto mt-auto">
-                            Book Chef
+                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto">
+                            Book A private chef
                         </Link>
                     </div>
                 </div>
             </section>
 
-            <section className="container mb-5">
+            <section className="container mt-5 mb-5">
                 <p className="fs-1 fw-bold text-center text-capitalize" style={{font: 'Nunito'}}>
                     Inspired by brands that redefine excellence
                 </p>
@@ -313,7 +312,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="container mb-5 bg-black rounded-4">
+            <section className="container mt-5 mb-5 bg-black rounded-4">
                 <div className="d-flex flex-column align-items-center p-5 m-3">
                     <p className="fs-1 fw-bold text-white text-center text-capitalize" style={{font: 'Nunito'}}>
                         Delight in Every Bite, <span style={{color: '#FB9D00'}}>Every Occasion.</span>
@@ -329,7 +328,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="container" id="faq-section">
+            <section className="container mt-4" id="faq-section">
                 <p className="fs-1 text-center text-capitalize fw-medium mt-5" style={{font: 'Nunito'}}>
                     Frequently Asked Questions
                 </p>
@@ -461,7 +460,7 @@ export default function LandingPage() {
                                      data-bs-parent="#accordionRight">
                                     <div className="accordion-body">
                                         <p>
-                                            A 40% deposit is required to secure your booking with feastify.
+                                            A 60% deposit is required to secure your booking with feastify.
                                             <br/>
                                             And full payment is required 4 days prior.
                                             <br/>
@@ -500,7 +499,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="container mb-5 bg-black rounded-4">
+            <section className="container mt-5 mb-5 bg-black rounded-4">
                 <div className="d-flex flex-column align-items-center p-5 m-3">
                     <p className="fs-3 text-center text-uppercase" style={{fontFamily: 'Nunito', color: '#FB9D00'}}>
                         Let us make your event memorable
