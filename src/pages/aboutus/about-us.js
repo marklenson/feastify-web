@@ -25,17 +25,18 @@ const eventData = "https://docs.google.com/forms/d/e/1FAIpQLScd4TSKuvPKH8dXynOnO
 export default function AboutUs() {
     return (
         <>
-            <section className="container mb-5 mt-3 d-flex flex-column align-items-center">
-                <p className='text-center fs-4' style={{color: "#FB9D00"}}>
-                    Where Passion Meets The Art Of Catering
+             <section className="container mb-5 d-flex flex-column align-items-center">
+                <p className="mt-4 display-3 fw-bold text-center text-capitalize">
+                    Where <span style={{color: '#FB9D00', fontWeight: '550'}}> Passion </span>
+                    Meets the art of <span style={{color: '#FB9D00', fontWeight: '550'}}>Catering</span>
                 </p>
-                <p className="text-center fs-5 fw-medium" style={{fontFamily: 'Nunito'}}>
-                    At Feastify, we connect 5-star private chefs with hosts, provide<br/>
-                    premium food catering services for corporate and private events and<br/>
+                <p className="text-center fs-5 fw-medium px-5" style={{font: 'Nunito'}}>
+                    At Feastify, we connect 5-star private chefs with hosts, provide
+                    premium food catering services for corporate and private events and
                     curate unique cuisine-themed experiences across Africa.
                 </p>
 
-                <Link to={eventData} className="btn rounded-pill px-4 py-2 bg-black text-white mt-2" style={{fontFamily: 'Nunito'}}>
+                <Link to={eventData} className="btn rounded-pill px-5 py-3 bg-black text-white mt-2 fs-5" style={{fontFamily: 'Nunito'}}>
                     Book Event Catering
                 </Link>
             </section>
@@ -145,7 +146,7 @@ export default function AboutUs() {
             </section>
 
             <section className="container mb-5 mt-3">
-                <p className="text-center fw-medium fs-2 text-capitalize">
+            <p className="text-center fw-medium fs-1 text-capitalize" style={{ font:'Nunito'}}>
                     Our services at a glance
                 </p>
 
@@ -224,7 +225,9 @@ export default function AboutUs() {
             </section>
 
             <section className="container mb-5 mt-3">
-                <p className="text-center fw-medium fs-2 text-capitalize">A Taste of What We Deliver</p>
+                <p className="text-center fw-medium fs-1 text-capitalize" style={{font: 'Nunito'}}>
+                    A Taste of What We Deliver
+                </p>
 
                 <div className="row">
                     <div className="col-md-3 p-0">

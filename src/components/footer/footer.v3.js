@@ -1,8 +1,10 @@
-import footerLogo from '../../assets/logo/footer-logo-.png'
+import footerLogo from '../../assets/logo/footer-logo.svg'
 import { Link } from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
-import {faTiktok, faInstagram, faLinkedin, faCcVisa, faApplePay, faCcMastercard} from '@fortawesome/free-brands-svg-icons';
+import {faInstagram, faLinkedin, faTiktok} from '@fortawesome/free-brands-svg-icons';
+import visa from '../../assets/logo/visa.svg';
+import mastercard from '../../assets/logo/mastercard.svg';
+import applepay from '../../assets/logo/apple-pay.svg';
 
 const eventData = "https://docs.google.com/forms/d/e/1FAIpQLScd4TSKuvPKH8dXynOnOT3JTJDDyxd0Ghsy7451PMyqSLCmmw/viewform"
 const chefRegister = "https://docs.google.com/forms/d/e/1FAIpQLSc7dq4kQOYNrF9QIdwiV_Hi0_OEBYUenxwxUMJUvcEJXdTGcg/viewform?usp=dialog"
@@ -22,8 +24,8 @@ export default function Footer() {
                                 height: '200px',
                             }}/>
                         </div>
-                        <div className="col-md-3 p-4 text-center text-md-start">
-                            <p className="fs-5 fw-medium" style={{ fontFamily: 'Nunito', color: '#FB9D00' }}>Main Links</p>
+                        <div className="col-md-3 p-4 text-left text-md-start">
+                            <p className="fs-5 fw-medium" style={{ font: 'Nunito', color: '#FB9D00' }}>Main Links</p>
                             <p className="fs-6 fw-normal">
                                 <Link to={eventData} className="text-dark text-decoration-none" rel="noopener noreferrer">Hire Private Chefs</Link>
                             </p>
@@ -38,8 +40,8 @@ export default function Footer() {
                             </p>
                         </div>
 
-                        <div className="col-md-3 p-4 text-center text-md-start">
-                            <p className="fs-5 fw-medium" style={{ fontFamily: 'Nunito', color: '#FB9D00' }}>Legal</p>
+                        <div className="col-md-3 p-4 text-left text-md-start">
+                            <p className="fs-5 fw-medium" style={{ font: 'Nunito', color: '#FB9D00' }}>Legal</p>
                             <p className="fs-6 fw-normal">
                                 <Link className="text-dark text-decoration-none" to="#">Terms & Conditions</Link>
                             </p>
@@ -47,16 +49,17 @@ export default function Footer() {
                                 <a className="text-dark text-decoration-none" href="#faq-section" style={{ fontWeight: 380 }}>FAQ</a>
                             </p>
 
-                            <p className="mt-3 fs-5 fw-medium" style={{ fontFamily: 'Nunito', color: '#FB9D00' }}>Payment Accepted</p>
+                            <p className="mt-3 fs-5 fw-medium" style={{ font: 'Nunito', color: '#FB9D00' }}>Payment Accepted</p>
                             <div className="d-flex justify-content-center justify-content-md-start">
-                                <FontAwesomeIcon className="fa-2xl mx-1" icon={faCcVisa} />
-                                <FontAwesomeIcon className="fa-2xl mx-1" icon={faCcMastercard} />
-                                <FontAwesomeIcon className="fa-2xl mx-1" icon={faApplePay} />
+                            <img src={visa} className="img-fluid" alt="Visa" style={{fonstSize: '24px'}}/>
+                            <img src={mastercard} className="img-fluid mx-3" alt="Mastercard" style={{fontSize: '24px'}}/>
+                            <img src={applepay} className="img-fluid me-auto" alt="Apple Pay" style={{fontSize: '24px'}}/>
                             </div>
                         </div>
 
                     </div>
-                    <hr style={{color: 'black'}} />
+                    <hr />
+
                     <div className="d-flex flex-column align-items-center mb-3">
                     <div className="d-flex flex-row mb-3" style={{onHover: 'red'}}>
                         <a href="https://www.tiktok.com/@thefeastify" target="_blank" rel="noopener noreferrer">
