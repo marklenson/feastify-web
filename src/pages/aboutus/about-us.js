@@ -19,8 +19,8 @@ import g8 from '../../assets/images/gallery-8.png'
 import {Link} from "react-router-dom";
 
 
-const eventData = "https://docs.google.com/forms/d/e/1FAIpQLScd4TSKuvPKH8dXynOnOT3JTJDDyxd0Ghsy7451PMyqSLCmmw/viewform"
-
+const eventData = "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform"
+const calendlyLink = "https://calendly.com/marklenson/30min"
 
 export default function AboutUs() {
     return (
@@ -41,7 +41,7 @@ export default function AboutUs() {
                 </Link>
             </section>
 
-            <section className="container mb-5">
+            <section className="container mt-4 mb-5">
                 <div className="row">
                     <div className="col-md-3 rounded-4 p-1 overflow-hidden">
                         <div className="rounded-4" style={{
@@ -78,7 +78,7 @@ export default function AboutUs() {
                 </div>
             </section>
 
-            <section className="container mb-5 bg-black rounded-5">
+            <section className="container mt-4 mb-5 bg-black rounded-5">
                 <div className="p-5">
                     <p className='text-center fs-2 text-white mb-3'>
                         Don’t just listen to what they say, try book and experience
@@ -102,10 +102,10 @@ export default function AboutUs() {
                                         ))}
                                     </p>
                                     <p className="mt-auto">
-                                        "We had such a great experience with The Feastify! The best thing about it
-                                        is how simple it is to find a private chef who can cook amazing food right in your home.
-                                        It made our family dinner feel so special, and we didn’t have to worry about
-                                        a thing. We’ll definitely use it again for our next event!"
+                                        "We had a great experience with The Feastify! Finding a private chef was easy,
+                                        and the food was amazing. Our family dinner felt special,
+                                        and we didn’t have to worry about anything.
+                                        We’ll definitely use it again for our next event!"
                                     </p>
                                     <p  style={{color: "#FB9D00"}}>
                                         Jenny Wilson Family
@@ -145,8 +145,10 @@ export default function AboutUs() {
                 </div>
             </section>
 
+
             <section className="container mb-5 mt-3">
             <p className="text-center fw-medium fs-1 text-capitalize" style={{ font:'Nunito'}}>
+
                     Our services at a glance
                 </p>
 
@@ -224,7 +226,7 @@ export default function AboutUs() {
                 </div>
             </section>
 
-            <section className="container mb-5 mt-3">
+            <section className="container mb-5 mt-4">
                 <p className="text-center fw-medium fs-1 text-capitalize" style={{font: 'Nunito'}}>
                     A Taste of What We Deliver
                 </p>
@@ -316,7 +318,7 @@ export default function AboutUs() {
                 </div>
             </section>
 
-            <section className="container mb-5 bg-black rounded-4">
+            <section className="container mb-5 mt-4 bg-black rounded-4">
                 <div className="d-flex flex-column align-items-center p-5 m-3">
                     <p className="fs-1 fw-medium text-white text-center text-capitalize" style={{fontFamily: 'Nunito'}}>
                         Lets talk <span style={{color: '#FB9D00'}}>Food and Events</span>
@@ -325,9 +327,9 @@ export default function AboutUs() {
                         Want to discuss your catering needs, explore themed events, or learn<br/> more about Feastify?
                         Schedule a meeting with us at your convenience.
                     </p>
-                    <button className="btn bg-white text-black px-5 py-3 fw-medium rounded-pill">
+                    <Link to={calendlyLink} className="btn bg-white text-black px-5 py-3 fw-medium rounded-pill">
                         Schedule A Meeting
-                    </button>
+                    </Link>
                 </div>
             </section>
         </>
