@@ -27,7 +27,7 @@ export default function AboutUs() {
     return (
         <>
             <section className="container mb-5 d-flex flex-column align-items-center">
-                <p className="mt-4 display-3 fw-bold text-center text-capitalize">
+                <p className="mt-4 display-4 fw-bold text-center text-capitalize">
                     Where <span style={{color: '#FB9D00', fontWeight: '550'}}> Passion </span>
                     Meets the art of <span style={{color: '#FB9D00', fontWeight: '550'}}>Catering</span>
                 </p>

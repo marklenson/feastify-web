@@ -42,7 +42,7 @@ export default function LandingPage() {
     return (
         <>
             <section className="container d-flex flex-column align-items-center" style={{height: 'auto'}}>
-                <p className="mt-4 display-2 fw-bold text-center text-capitalize">
+                <p className="mt-4 display-4 fw-bold text-center text-capitalize">
                     Your <span style={{color: '#FB9D00', fontWeight: '550'}}>Event</span>
                     , Our <span style={{color: '#FB9D00', fontWeight: '550'}}>Culinary</span> Magic!
                 </p>
