@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import {Container, Modal, Nav, Navbar} from 'react-bootstrap';
-import logo from "../../assets/navicon/feastify-logo.png";
+import logo from "../../assets/navicon/img.png";
 
 const chefRegister = "https://docs.google.com/forms/d/e/1FAIpQLSc7dq4kQOYNrF9QIdwiV_Hi0_OEBYUenxwxUMJUvcEJXdTGcg/viewform?usp=dialog"
 const eventData = "https://docs.google.com/forms/d/e/1FAIpQLScd4TSKuvPKH8dXynOnOT3JTJDDyxd0Ghsy7451PMyqSLCmmw/viewform"
@@ -42,7 +42,7 @@ export default function Navigation() {
                             alt="Feastify"
                             style={{objectFit: "cover"}}
                         />
-                        <p className="text-white fs-5 fw-bold m-0"> The Feastify</p>
+                        <p className="text-white fs-5 fw-bold m-0" style={{font: 'Fredoka'}}> The Feastify</p>
                     </Link>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav border-0"/>
