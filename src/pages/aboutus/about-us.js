@@ -103,10 +103,10 @@ export default function AboutUs() {
                                         ))}
                                     </p>
                                     <p className="mt-auto">
-                                        "We had such a great experience with The Feastify! The best thing about it
-                                        is how simple it is to find a private chef who can cook amazing food right in your home.
-                                        It made our family dinner feel so special, and we didn’t have to worry about
-                                        a thing. We’ll definitely use it again for our next event!"
+                                        "We had a great experience with The Feastify! Finding a private chef was easy,
+                                        and the food was amazing. Our family dinner felt special,
+                                        and we didn’t have to worry about anything.
+                                        We’ll definitely use it again for our next event!"
                                     </p>
                                     <p  style={{color: "#FB9D00"}}>
                                         Jenny Wilson Family
