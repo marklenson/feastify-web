@@ -45,7 +45,7 @@ export default function LandingPage() {
     return (
         <>
 
-            <section className="container d-flex flex-column align-items-center" style={{height: 'auto'}}>
+            <section className="d-flex flex-column align-items-center" style={{height: 'auto'}}>
                 <p className="mt-4 display-4 fw-bold text-center text-capitalize">
                     Your <span style={{color: '#FB9D00', fontWeight: '550'}}>Event</span>
                     , Our <span style={{color: '#FB9D00', fontWeight: '550'}}>Culinary</span> Magic!
@@ -100,7 +100,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="container mt-3 mb-5 bg-black rounded-4">
+            <section className="mt-3 mb-5 bg-black rounded-4">
                 <div className="row p-3">
                     <div className="col" ref={corporateEventsRef}>
                         <p className="fs-2 fw-medium text-center mb-0" style={{
@@ -145,7 +145,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="container mt-5 mb-5">
+            <section className="mt-5 mb-5">
                 <p className="fs-1 fw-bold text-center text-capitalize" style={{font: 'Nunito'}}>
                     A taste of the talent we offer
                 </p>
@@ -246,7 +246,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="container mt-5 mb-5">
+            <section className="mt-5 mb-5">
                 <p className="fs-1 fw-bold text-center text-capitalize" style={{font: 'Nunito'}}>
 
                     Inspired by brands that redefine excellence
@@ -318,7 +318,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="container mt-5 mb-5 bg-black rounded-4">
+            <section className="mt-5 mb-5 bg-black rounded-4">
                 <div className="d-flex flex-column align-items-center p-5 m-3">
                     <p className="fs-1 fw-bold text-white text-center" style={{font: 'Nunito'}}>
                         Delight in Every Bite, <span style={{color: '#FB9D00'}}>Every Occasion.</span>
@@ -335,7 +335,7 @@ export default function LandingPage() {
             </section>
 
 
-            <section className="container mt-4" id="faq-section">
+            <section className="mt-4" id="faq-section">
                 <p className="fs-1 text-center text-capitalize fw-medium mt-5" style={{font: 'Nunito'}}>
                     Frequently Asked Questions
                 </p>
@@ -704,7 +704,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="container mt-5 mb-5 bg-black rounded-4">
+            <section className="mt-5 mb-5 bg-black rounded-4">
                 <div className="d-flex flex-column align-items-center p-5 m-3">
                     <p className="fs-3 text-center text-uppercase" style={{font: 'Nunito', color: '#FB9D00'}}>
                         Let us make your event memorable
