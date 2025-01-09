@@ -1,4 +1,6 @@
 import React, {useRef} from 'react';
+// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+// import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {Link} from 'react-router-dom'
 import col1a from '../../assets/images/img-col-1.png';
 import col2a from '../../assets/images/img-col-2.png';
@@ -41,12 +43,13 @@ export default function LandingPage() {
 
     return (
         <>
+
             <section className="container d-flex flex-column align-items-center" style={{height: 'auto'}}>
                 <p className="mt-4 display-2 fw-bold text-center text-capitalize">
                     Your <span style={{color: '#FB9D00', fontWeight: '550'}}>Event</span>
                     , Our <span style={{color: '#FB9D00', fontWeight: '550'}}>Culinary</span> Magic!
                 </p>
-                <p className="fs-5 text-center px-5" style={{font: "Nunito"}}>
+                <p className="fs-5 text-center mt-3" style={{font: "Nunito"}}>
                     “Elevate your event with unforgettable dishes and seamless service.
                     We make every corporate and private gatherings extraordinary with a
                     touch of premium culinary magic.”
@@ -58,6 +61,7 @@ export default function LandingPage() {
                 </Link>
 
                 <div className="container mt-4 mb-5">
+
                     <div className="row">
                         <div className="col-md-3 rounded-4 p-1 overflow-hidden">
                             <div className="rounded-4" style={{
@@ -243,6 +247,7 @@ export default function LandingPage() {
 
             <section className="container mt-5 mb-5">
                 <p className="fs-1 fw-bold text-center text-capitalize" style={{font: 'Nunito'}}>
+
                     Inspired by brands that redefine excellence
                 </p>
                 <p className="fs-6 text-muted text-center" style={{font: 'Nunito'}}>
@@ -314,7 +319,7 @@ export default function LandingPage() {
 
             <section className="container mt-5 mb-5 bg-black rounded-4">
                 <div className="d-flex flex-column align-items-center p-5 m-3">
-                    <p className="fs-1 fw-bold text-white text-center text-capitalize" style={{font: 'Nunito'}}>
+                    <p className="fs-1 fw-bold text-white text-center" style={{font: 'Nunito'}}>
                         Delight in Every Bite, <span style={{color: '#FB9D00'}}>Every Occasion.</span>
                     </p>
                     <p className="fs-5 text-white text-center" style={{font: 'Nunito'}}>
@@ -327,6 +332,7 @@ export default function LandingPage() {
                     </Link>
                 </div>
             </section>
+
 
             <section className="container mt-4" id="faq-section">
                 <p className="fs-1 text-center text-capitalize fw-medium mt-5" style={{font: 'Nunito'}}>
@@ -501,10 +507,10 @@ export default function LandingPage() {
 
             <section className="container mt-5 mb-5 bg-black rounded-4">
                 <div className="d-flex flex-column align-items-center p-5 m-3">
-                    <p className="fs-3 text-center text-uppercase" style={{fontFamily: 'Nunito', color: '#FB9D00'}}>
+                    <p className="fs-3 text-center text-uppercase" style={{font: 'Nunito', color: '#FB9D00'}}>
                         Let us make your event memorable
                     </p>
-                    <p className="fs-5 text-white text-center" style={{fontFamily: 'Nunito'}}>
+                    <p className="fs-5 text-white text-center" style={{font: 'Nunito'}}>
                         Can’t find the answer you’re looking for? Please chat to our friendly team.
                     </p>
                     <Link to={whatsappContact} className="btn bg-white text-black px-5 py-3 fw-medium rounded-pill">

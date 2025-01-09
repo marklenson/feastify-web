@@ -1,34 +1,13 @@
-import React, {useEffect, useState} from 'react';
-import {Link, useNavigate} from 'react-router-dom';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import {Container, Modal, Nav, Navbar} from 'react-bootstrap';
-import logo from "../../assets/navicon/img.png";
+import logo from "../../assets/logo/img.png";
 
 const chefRegister = "https://docs.google.com/forms/d/e/1FAIpQLSc7dq4kQOYNrF9QIdwiV_Hi0_OEBYUenxwxUMJUvcEJXdTGcg/viewform?usp=dialog"
 const eventData = "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform"
 const themeExperience = "https://docs.google.com/forms/d/e/1FAIpQLSdS6-fzfUke4eeyAr1hlaVo3HtgAeQLInbUvQK9uYGfz6DqXg/viewform"
 
 export default function Navigation() {
-    const navigate = useNavigate()
-    const [showModal, setShowModal] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-    useEffect(() => {
-        const token = sessionStorage.getItem("Token");
-        setIsLoggedIn(!!token);
-    }, [sessionStorage.getItem("Token")]);
-
-    const handleShow = () => setShowModal(true);
-
-    const handleSelection = (path) => {
-        setShowModal(false);
-    };
-
-    const handleLogout = () => {
-        sessionStorage.clear();
-        setIsLoggedIn(false);
-        navigate('/');
-        alert("You have been logged out.");
-    };
 
     return (
         <>
@@ -68,29 +47,7 @@ export default function Navigation() {
                 </Container>
             </Navbar>
 
-            <Modal show={showModal} onHide={() => setShowModal(false)} centered className="border-0">
-                <Modal.Header closeButton className="border-0">
-                    <Modal.Title>Choose Your Role</Modal.Title>
-                </Modal.Header>
-                <Modal.Body className="border-0">
-                    <p className="fs-6" style={{font: 'Nunito'}}>Please select your preferred role to proceed:</p>
-                    <div className="d-flex flex-column">
-                        <Link
-                            to="/chef-login"
-                            className="btn btn-primary mb-1"
-                            onClick={() => handleSelection("/chef-login")}>
-                            Chef
-                        </Link>
-                        <Link
-                            to="/login"
-                            className="btn btn-primary mb-1"
-                            onClick={() => handleSelection("/login")}
-                        >
-                            Client
-                        </Link>
-                    </div>
-                </Modal.Body>
-            </Modal>
+            
         </>
     );
 }

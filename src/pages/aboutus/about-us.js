@@ -17,7 +17,6 @@ import g6 from '../../assets/images/gallery-6.png'
 import g7 from '../../assets/images/gallery-7.png'
 import g8 from '../../assets/images/gallery-8.png'
 import {Link} from "react-router-dom";
-import React from "react";
 
 
 const eventData = "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform"
@@ -26,7 +25,7 @@ const calendlyLink = "https://calendly.com/marklenson/30min"
 export default function AboutUs() {
     return (
         <>
-            <section className="container mb-5 d-flex flex-column align-items-center">
+             <section className="container mb-5 d-flex flex-column align-items-center">
                 <p className="mt-4 display-3 fw-bold text-center text-capitalize">
                     Where <span style={{color: '#FB9D00', fontWeight: '550'}}> Passion </span>
                     Meets the art of <span style={{color: '#FB9D00', fontWeight: '550'}}>Catering</span>
@@ -146,8 +145,10 @@ export default function AboutUs() {
                 </div>
             </section>
 
-            <section className="container mb-5 mt-4">
-                <p className="text-center fw-medium fs-1 text-capitalize" style={{ font:'Nunito'}}>
+
+            <section className="container mb-5 mt-3">
+            <p className="text-center fw-medium fs-1 text-capitalize" style={{ font:'Nunito'}}>
+
                     Our services at a glance
                 </p>
 
