@@ -17,6 +17,7 @@ import brand6 from '../../assets/images/brand-6.png';
 import useScrollTriggeredCountUp from "../../components/useScrollTriggeredCountUp";
 
 const chefBooking = "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform"
+const eventData = "https://docs.google.com/forms/d/e/1FAIpQLSc4GleU82zhAag3Ani21hHvFxpUqdDucP1FBNg3jsQB1zN4Tg/viewform"
 const whatsappContact = "wa.link/9yfb0t"
 const callContact = "tel:0711749149"
 const emailContact = "mailto:hi@thefeastify.com"
@@ -250,11 +251,11 @@ export default function LandingPage() {
                 </p>
                 <div className="row p-3">
                     <div style={{
-                    display: 'flex',
-                    overflowX: 'auto',
-                    whiteSpace: 'nowrap',
-                    animation: 'scroll 10s linear infinite'
-                }}>
+                        display: 'flex',
+                        overflowX: 'auto',
+                        whiteSpace: 'nowrap',
+                        animation: 'scroll 10s linear infinite'
+                    }}>
                         <div className="col-md-2">
                             <div style={{
                                 backgroundImage: `url(${brand1})`,
@@ -308,7 +309,7 @@ export default function LandingPage() {
                                 height: '10rem'
                             }}/>
                         </div>
-                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -341,28 +342,27 @@ export default function LandingPage() {
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne" aria-expanded="false"
                                             aria-controls="collapseOne" style={{font: 'Nunito'}}>
-                                        Need Catering Services for your event?
+                                        What does a private chef service include in Nairobi?
                                     </button>
                                 </h2>
                                 <div id="collapseOne" className="accordion-collapse collapse"
                                      aria-labelledby="headingOne"
                                      data-bs-parent="#accordionLeft">
                                     <div className="accordion-body">
-                                        <p>
-                                            <strong>Call us</strong>
-                                            <a href={callContact} style={{color: "#FB9D00"}}> 0711749149</a> <br/>
-
-                                            <strong>Email us</strong>
-                                            <a href={emailContact} style={{color: "#FB9D00"}}> hi@thefeastify.com</a>
+                                        <p style={{font: 'Nunito'}}>
+                                            The Feastify private chef service includes everything necessary to enjoy a
+                                            personalized dining experience at home.<br/>
                                             <br/>
-                                            <strong>Fill out an</strong>
-                                            <a href={chefBooking} style={{color: "#FB9D00"}}>application form</a>
-                                            <br/>
-                                            <br/>
-                                            In order to best help you with an accurate quote we will need to ask a few
-                                            questions which we can do over the phone, email, online form, google meet or
-                                            in person if you wish.
-
+                                            This includes:
+                                            <ul>
+                                                <li>Customization of a menu based on your preferences;</li>
+                                                <li>Purchase of ingredients;</li>
+                                                <li>Preparation of the menu at your home;</li>
+                                                <li>Complete table service;</li>
+                                                <li>Set up and cleaning of the kitchen and used spaces.</li>
+                                            </ul>
+                                            Please note that tableware and glassware are not included. Gratuity is
+                                            entirely at your discretion.
                                         </p>
                                     </div>
                                 </div>
@@ -373,25 +373,33 @@ export default function LandingPage() {
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapseTwo" aria-expanded="false"
                                             aria-controls="collapseTwo" style={{font: 'Nunito'}}>
-                                        How much food will I need for the event?
+                                        How much does a private chef cost in Nairobi?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" className="accordion-collapse collapse"
                                      aria-labelledby="headingTwo"
                                      data-bs-parent="#accordionLeft">
                                     <div className="accordion-body">
-                                        <p>
-                                            This depends on a few factors including the occasion, time and duration of
-                                            the function, whether the guests are big or small eaters and your budget.
+                                        <p style={{font: 'Nunito'}}>
+                                            The price of renting a chef in Nairobi can vary depending on the specifics,
+                                            but smaller groups tend to have a slightly different price per person
+                                            compared to larger gatherings.<br/>
                                             <br/>
-                                            <br/>
-                                            Most of our menus are priced per person and our experienced staff at
-                                            feastify will work with you.
-                                            <br/>
-                                            <br/>
-                                            Prior Service day we will make sure you have the right amount and variety of
-                                            food for your intended function, we offer to shop for the freshest
-                                            ingredients on your behalf as well.
+                                            Booking prices range from 11,000 KSH to 25,000 KSH.
+                                            <ul>
+                                                <li>For groups of 13 people or more, the price is 11,000 KSH per
+                                                    person.
+                                                </li>
+                                                <li>For groups of 7 to 12 people, the cost is 13,000 KSH per person.
+                                                </li>
+                                                <li>For groups of 3 to 6 people, the rate is 15,000 KSH per person</li>
+                                                <li>For 2 people, the price is 17,000 KSH per person.</li>
+                                            </ul>
+                                            Seasonal ingredients, your location, and how soon you book also affect the
+                                            final price. If you're interested in getting free quotes with no obligation,
+                                            fill out our form and let the best chefs near you send unique proposals for
+                                            your event.
+                                            `
                                         </p>
                                     </div>
                                 </div>
@@ -402,27 +410,116 @@ export default function LandingPage() {
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseThree" style={{font: 'Nunito'}}>
-                                        How soon do I need to book and give final numbers for my event?
+                                        How can I hire a private chef in Nairobi?
                                     </button>
                                 </h2>
                                 <div id="collapseThree" className="accordion-collapse collapse"
                                      aria-labelledby="headingThree"
                                      data-bs-parent="#accordionLeft">
                                     <div className="accordion-body">
-                                        <p>
-                                            For buffet and service events, we at feastify require final numbers 12 days
-                                            prior to the function. For platters and finger food drop off we require 7
-                                            days prior.
+                                        <p style={{font: 'Nunito'}}>
+                                            Booking is easy!
                                             <br/>
                                             <br/>
-                                            At Feastify we do our best to accommodate any late/last minute bookings as
-                                            we understand some things are not planned.
+                                            Just tell us the date of your event, number of guests,
+                                            dietary preferences and any allergies, and a few details about your kitchen.
+                                            <br/>
+                                            <br/>
+                                            Within a few minutes, you'll receive customized menus from our team curated
+                                            by qualified chefs.
+                                            <br/>
+                                            <br/>
+                                            Our team is open to modify menus, discuss pricing, or
+                                            get answers to any questions you might have. Once you've found the perfect
+                                            menu, finalize your reservation online.
+                                            <br/>
+                                            <br/>
+                                            We'll then provide the private
+                                            chef’s service and fresh ingredients on the said date to your location.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingFour">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour" style={{font: 'Nunito'}}>
+                                        How can I find a private chef near me?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" className="accordion-collapse collapse"
+                                     aria-labelledby="headingFour"
+                                     data-bs-parent="#accordionLeft">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            There are currently 200+ chefs available in Nairobi. Fill out a form
+                                            specifying your needs and the date.
+                                            <br/>
+                                            <br/>
+                                            The Feastify will connect you with the
+                                            best available chefs in Nairobi who will satisfy your appetite
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingFive">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive" style={{font: 'Nunito'}}>
+                                        Is there a maximum number of guests for a private chef service?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" className="accordion-collapse collapse"
+                                     aria-labelledby="headingFive"
+                                     data-bs-parent="#accordionLeft">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            While there's no strict limit on guest count, private chef experiences are
+                                            designed to create a more intimate atmosphere, perfect for gatherings of
+                                            friends and family.
+                                            <br/>
+                                            <br/>
+                                            Since most homes have limited space to accommodate large
+                                            groups, parties typically don't exceed 20 people.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingSix">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix" style={{font: 'Nunito'}}>
+                                        Why does The Feastify charge a service fee?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" className="accordion-collapse collapse"
+                                     aria-labelledby="headingSix"
+                                     data-bs-parent="#accordionLeft">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            The fee is used to maintain the website, to continuously improve it and of
+                                            course to offer you the best possible customer service.
+                                            <br/>
+                                            <br/>
+                                            We do our best to provide you with authentic private chefs.
+                                            <br/>
+                                            <br/>
+                                            We are very price transparent on
+                                            every cost incurred. The service fee allows us to pay our salaries and keep
+                                            us going :)
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div className="col-md-6">
                         <div className="accordion accordion-flush" id='accordionRight'>
                             <div className="accordion-item">
@@ -431,18 +528,32 @@ export default function LandingPage() {
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapseSeven" aria-expanded="false"
                                             aria-controls="collapseSeven" style={{font: 'Nunito'}}>
-                                        What if I need to cancel my booking?
+                                        Need Catering Services for your event?
                                     </button>
                                 </h2>
                                 <div id="collapseSeven" className="accordion-collapse collapse"
                                      aria-labelledby="headingSeven"
                                      data-bs-parent="#accordionRight">
                                     <div className="accordion-body">
-                                        <p>
-                                            If a cancellation is made less than 48 hours prior the customers may be
-                                            liable for 100% of the catering cost.
+                                        <p style={{font: 'Nunito'}}>
+                                            <strong>Call us </strong>
+                                            <a href={callContact} className="text-decoration-none"
+                                               style={{color: "#FB9D00"}}>0711749149</a>
                                             <br/>
-                                            See our General Terms and Conditions for more info.
+                                            <strong>Email us </strong>
+                                            <a href={emailContact} className="text-decoration-none"
+                                               style={{color: "#FB9D00"}}>hi@thefeastify.com</a>
+                                            <br/>
+                                            <strong>Fill out </strong>
+                                            <a href={eventData} className="text-decoration-none"
+                                               style={{color: "#FB9D00"}}> our event booking form</a>
+                                            <br/>
+                                            <br/>
+
+                                            In order to best help you with an accurate quote we will need to ask a few
+                                            questions which we can do over the phone, email, online form, google meet or
+                                            in person if you wish.
+
                                         </p>
                                     </div>
                                 </div>
@@ -453,20 +564,27 @@ export default function LandingPage() {
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapseEight" aria-expanded="false"
                                             aria-controls="collapseEight" style={{font: 'Nunito'}}>
-                                        Do I need to pay a deposit?
+                                        How much food will I need for the event?
                                     </button>
                                 </h2>
                                 <div id="collapseEight" className="accordion-collapse collapse"
                                      aria-labelledby="headingEight"
                                      data-bs-parent="#accordionRight">
                                     <div className="accordion-body">
-                                        <p>
-                                            A 60% deposit is required to secure your booking with feastify.
+                                        <p style={{font: 'Nunito'}}>
+                                            This depends on a few factors including the occasion, time and duration of
+                                            the function, whether the guests are big or small eaters and your budget.
                                             <br/>
-                                            And full payment is required 4 days prior.
                                             <br/>
-                                            Purchase orders will be accepted from Government Departments and payment
-                                            terms agreed.
+                                            Most of our menus are priced per person and our experienced staff at
+                                            feastify will work with you.
+
+                                            <br/>
+                                            <br/>
+                                            Prior Service day we will make sure you have the right amount and variety of
+                                            food for your intended function, we offer to shop for the freshest
+                                            ingredients on your behalf as well.
+
                                         </p>
                                     </div>
                                 </div>
@@ -477,20 +595,100 @@ export default function LandingPage() {
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapseNine" aria-expanded="false"
                                             aria-controls="collapseNine" style={{font: 'Nunito'}}>
-                                        How do I pay?
+                                        How soon do I need to book and give final numbers for my event?
                                     </button>
                                 </h2>
                                 <div id="collapseNine" className="accordion-collapse collapse"
                                      aria-labelledby="headingNine"
                                      data-bs-parent="#accordionRight">
                                     <div className="accordion-body">
-                                        <p>
+                                        <p style={{font: 'Nunito'}}>
+                                            For buffet and service events, we at feastify require final numbers 12 days
+                                            prior to the function. For platters and finger food drop off we require 7
+                                            days prior.
+                                            <br/>
+                                            <br/>
+                                            At Feastify we do our best to accommodate any late/last minute bookings as
+                                            we understand some things are not planned.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingTen">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTen" aria-expanded="false"
+                                            aria-controls="collapseTen" style={{font: 'Nunito'}}>
+                                        What if I need to cancel my booking?
+                                    </button>
+                                </h2>
+                                <div id="collapseTen" className="accordion-collapse collapse"
+                                     aria-labelledby="headingTen"
+                                     data-bs-parent="#accordionRight">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            If a cancellation is made <strong>less than 48 hours</strong> prior the
+                                            customers may be
+                                            liable for 100% of the catering cost.
+                                            <br/>
+                                            <br/>
+                                            See our General Terms and Conditions
+                                            for more info.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingEleven">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseEleven" aria-expanded="false"
+                                            aria-controls="collapseEleven" style={{font: 'Nunito'}}>
+                                        Do I need to pay a deposit?
+                                    </button>
+                                </h2>
+                                <div id="collapseEleven" className="accordion-collapse collapse"
+                                     aria-labelledby="headingEleven"
+                                     data-bs-parent="#accordionRight">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            A <strong>60% deposit</strong> is <strong>required</strong> to secure your
+                                            booking with feastify.
+                                            <br/>
+                                            <br/>
+                                            <strong>Full payment</strong> is required <strong>4 days prior</strong>.
+                                            <br/>
+                                            <br/>
+                                            Purchase orders will be accepted from Government Departments and payment
+                                            terms agreed.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingTwelve">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwelve" aria-expanded="false"
+                                            aria-controls="collapseTwelve" style={{font: 'Nunito'}}>
+                                        How do I pay?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwelve" className="accordion-collapse collapse"
+                                     aria-labelledby="headingTwelve"
+                                     data-bs-parent="#accordionRight">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
                                             You can easily pay your bill online. Please ask for our bank details.
+                                            <br/>
                                             <br/>
                                             We also accept cash, EFT transfer or Visa/MasterCard payment.
                                             <br/>
+                                            <br/>
                                             See our General Terms and Conditions for more info.
-
                                         </p>
                                     </div>
                                 </div>
