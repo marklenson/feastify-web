@@ -14,9 +14,9 @@ import brand3 from '../../assets/images/brand-7.png';
 import brand4 from '../../assets/images/brand-4.png';
 import brand5 from '../../assets/images/brand-5.png';
 import brand6 from '../../assets/images/brand-6.png';
-import useScrollTriggeredCountUp  from "../../components/useScrollTriggeredCountUp";
+import useScrollTriggeredCountUp from "../../components/useScrollTriggeredCountUp";
 
-const eventData = "https://docs.google.com/forms/d/e/1FAIpQLScd4TSKuvPKH8dXynOnOT3JTJDDyxd0Ghsy7451PMyqSLCmmw/viewform"
+const chefBooking = "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform"
 const whatsappContact = "wa.link/9yfb0t"
 const callContact = "tel:0711749149"
 const emailContact = "mailto:hi@thefeastify.com"
@@ -52,7 +52,8 @@ export default function LandingPage() {
                     touch of premium culinary magic.”
                 </p>
 
-                <Link to={eventData} className="btn bg-black text-white px-5 py-3 rounded-pill mt-2 mb-2 fs-5" style={{fontFamily: 'Nunito'}}>
+                <Link to={chefBooking} className="btn bg-black text-white px-5 py-3 rounded-pill mt-2 mb-2 fs-5"
+                      style={{fontFamily: 'Nunito'}}>
                     Book Event Catering
                 </Link>
 
@@ -94,7 +95,6 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            
 
             <section className="container mb-5 bg-black rounded-4">
                 <div className="row p-3">
@@ -122,7 +122,7 @@ export default function LandingPage() {
                         <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Five Star Private<br/>Chefs
                             Onboard</p>
                     </div>
-                    <div className="col"ref={dishesServedRef}>
+                    <div className="col" ref={dishesServedRef}>
                         <p className="fs-2 fw-medium text-center mb-0" style={{
                             font: 'Nunito',
                             color: '#FB9D00'
@@ -165,7 +165,7 @@ export default function LandingPage() {
                             plate.
                         </p>
 
-                        <Link to={eventData}
+                        <Link to={chefBooking}
                               className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto mt-auto">
                             Book Chef
                         </Link>
@@ -188,7 +188,7 @@ export default function LandingPage() {
                             Creating dishes that celebrate nature’s bounty is my way of making every meal a celebration.
                         </p>
 
-                        <Link to={eventData}
+                        <Link to={chefBooking}
                               className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto mt-auto">
                             Book Chef
                         </Link>
@@ -211,7 +211,7 @@ export default function LandingPage() {
                             To me, food is an art form, and every meal should be as beautiful as it is delicious.
                         </p>
 
-                        <Link to={eventData}
+                        <Link to={chefBooking}
                               className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto mt-auto">
                             Book Chef
                         </Link>
@@ -234,7 +234,7 @@ export default function LandingPage() {
                             Cooking is storytelling, and every dish shares a chapter of culture and passion.
                         </p>
 
-                        <Link to={eventData}
+                        <Link to={chefBooking}
                               className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto mt-auto">
                             Book Chef
                         </Link>
@@ -250,59 +250,66 @@ export default function LandingPage() {
                     Brands shown do not imply affiliation or endorsement, they inspire us alot.
                 </p>
                 <div className="row p-3">
-                    <div className="col-md-2">
-                        <div style={{
-                            backgroundImage: `url(${brand1})`,
-                            backgroundSize: 'contain',
-                            backgroundRepeat: 'no-repeat',
-                            backgroundPosition: 'center',
-                            height: '10rem'
-                        }}/>
-                    </div>
-                    <div className="col-md-2">
-                        <div style={{
-                            backgroundImage: `url(${brand2})`,
-                            backgroundSize: 'contain',
-                            backgroundRepeat: 'no-repeat',
-                            backgroundPosition: 'center',
-                            height: '10rem'
-                        }}/>
-                    </div>
-                    <div className="col-md-2">
-                        <div style={{
-                            backgroundImage: `url(${brand3})`,
-                            backgroundSize: 'contain',
-                            backgroundRepeat: 'no-repeat',
-                            backgroundPosition: 'center',
-                            height: '10rem'
-                        }}/>
-                    </div>
-                    <div className="col-md-2">
-                        <div style={{
-                            backgroundImage: `url(${brand4})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            height: '10rem'
-                        }}/>
-                    </div>
-                    <div className="col-md-2">
-                        <div style={{
-                            backgroundImage: `url(${brand5})`,
-                            backgroundSize: 'contain',
-                            backgroundRepeat: 'no-repeat',
-                            backgroundPosition: 'center',
-                            height: '10rem'
-                        }}/>
-                    </div>
-                    <div className="col-md-2">
-                        <div style={{
-                            backgroundImage: `url(${brand6})`,
-                            backgroundSize: 'contain',
-                            backgroundRepeat: 'no-repeat',
-                            backgroundPosition: 'center',
-                            height: '10rem'
-                        }}/>
-                    </div>
+                    <div style={{
+                    display: 'flex',
+                    overflowX: 'auto',
+                    whiteSpace: 'nowrap',
+                    animation: 'scroll 10s linear infinite'
+                }}>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand1})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand2})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand3})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand4})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand5})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand6})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        </div>
                 </div>
             </section>
 
@@ -316,7 +323,7 @@ export default function LandingPage() {
                         colorful, modern, and imaginative dishes, including corporate and event<br/>
                         catering
                     </p>
-                    <Link to={eventData} className="btn bg-white text-black px-5 py-3 fw-medium rounded-pill">
+                    <Link to={chefBooking} className="btn bg-white text-black px-5 py-3 fw-medium rounded-pill">
                         Book Us Now
                     </Link>
                 </div>
@@ -349,7 +356,7 @@ export default function LandingPage() {
                                             <strong>Email us</strong>
                                             <a href={emailContact}> hi@thefeastify.com</a>
                                             <br/>
-                                            <strong>Fill out an</strong> <a href={eventData}>application form</a>
+                                            <strong>Fill out an</strong> <a href={chefBooking}>application form</a>
                                             <br/>
                                             <br/>
                                             In order to best help you with an accurate quote we will need to ask a few

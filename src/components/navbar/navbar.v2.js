@@ -4,7 +4,7 @@ import {Container, Modal, Nav, Navbar} from 'react-bootstrap';
 import logo from "../../assets/navicon/img.png";
 
 const chefRegister = "https://docs.google.com/forms/d/e/1FAIpQLSc7dq4kQOYNrF9QIdwiV_Hi0_OEBYUenxwxUMJUvcEJXdTGcg/viewform?usp=dialog"
-const eventData = "https://docs.google.com/forms/d/e/1FAIpQLScd4TSKuvPKH8dXynOnOT3JTJDDyxd0Ghsy7451PMyqSLCmmw/viewform"
+const eventData = "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform"
 const themeExperience = "https://docs.google.com/forms/d/e/1FAIpQLSdS6-fzfUke4eeyAr1hlaVo3HtgAeQLInbUvQK9uYGfz6DqXg/viewform"
 
 export default function Navigation() {

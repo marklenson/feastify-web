@@ -20,8 +20,7 @@ import {Link} from "react-router-dom";
 import React from "react";
 
 
-const eventData = "https://docs.google.com/forms/d/e/1FAIpQLScd4TSKuvPKH8dXynOnOT3JTJDDyxd0Ghsy7451PMyqSLCmmw/viewform"
-
+const eventData = "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform"
 
 export default function AboutUs() {
     return (
