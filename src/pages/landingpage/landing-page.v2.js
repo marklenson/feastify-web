@@ -350,12 +350,13 @@ export default function LandingPage() {
                                     <div className="accordion-body">
                                         <p>
                                             <strong>Call us</strong>
-                                            <a href={callContact}> 0711749149</a> <br/>
+                                            <a href={callContact} style={{color: "#FB9D00"}}> 0711749149</a> <br/>
 
                                             <strong>Email us</strong>
-                                            <a href={emailContact}> hi@thefeastify.com</a>
+                                            <a href={emailContact} style={{color: "#FB9D00"}}> hi@thefeastify.com</a>
                                             <br/>
-                                            <strong>Fill out an</strong> <a href={chefBooking}>application form</a>
+                                            <strong>Fill out an</strong>
+                                            <a href={chefBooking} style={{color: "#FB9D00"}}>application form</a>
                                             <br/>
                                             <br/>
                                             In order to best help you with an accurate quote we will need to ask a few
