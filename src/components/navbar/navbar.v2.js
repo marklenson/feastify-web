@@ -12,7 +12,7 @@ export default function Navigation() {
     return (
         <>
             <Navbar expand="lg" className="bg-black shadow-sm">
-                <Container>
+                <div className='container-xxl'>
                     <Link to="/" className="navbar-brand d-flex align-items-center m-0 p-0">
                         <img
                             src={logo}
@@ -44,7 +44,7 @@ export default function Navigation() {
                         </Nav>
 
                     </Navbar.Collapse>
-                </Container>
+                </div>
             </Navbar>
 
             
