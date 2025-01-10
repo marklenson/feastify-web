@@ -17,10 +17,7 @@ import g6 from '../../assets/images/gallery-6.png'
 import g7 from '../../assets/images/gallery-7.png'
 import g8 from '../../assets/images/gallery-8.png'
 import {Link} from "react-router-dom";
-
-
-const eventData = "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform"
-const calendlyLink = "https://calendly.com/marklenson/30min"
+import {eventData, calendlyLink} from '../../App'
 
 export default function AboutUs() {
     return (

@@ -5,11 +5,7 @@ import {faInstagram, faLinkedin, faTiktok} from '@fortawesome/free-brands-svg-ic
 import visa from '../../assets/logo/visa.svg';
 import mastercard from '../../assets/logo/mastercard.svg';
 import applepay from '../../assets/logo/apple-pay.svg';
-
-const eventData = "https://docs.google.com/forms/d/e/1FAIpQLScd4TSKuvPKH8dXynOnOT3JTJDDyxd0Ghsy7451PMyqSLCmmw/viewform"
-const chefRegister = "https://docs.google.com/forms/d/e/1FAIpQLSc7dq4kQOYNrF9QIdwiV_Hi0_OEBYUenxwxUMJUvcEJXdTGcg/viewform?usp=dialog"
-const themeExperience = "https://docs.google.com/forms/d/e/1FAIpQLSdS6-fzfUke4eeyAr1hlaVo3HtgAeQLInbUvQK9uYGfz6DqXg/viewform"
-
+import {chefRegister, eventData, themeExperience} from "../../App";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -94,9 +90,7 @@ export default function Footer() {
                             <span className="fw-medium">The Feastify Global Limited.</span>
                             <br/>
                             &copy; {currentYear} <span className="text-muted">-</span> All rights reserved.
-
                         </p>
-
                     </div>
                 </div>
             </section>
