@@ -24,7 +24,7 @@ export default function Footer() {
                                 height: '200px',
                             }}/>
                         </div>
-                        <div className="col-md-3 p-4 text-center text-md-start">
+                        <div className="col-md-3 p-4 text-center text-md-left">
                             <p className="fs-5 fw-medium" style={{font: 'Nunito', color: '#FB9D00'}}>Main Links</p>
                             <p className="fs-6 fw-normal">
                                 <Link to={eventData} className="text-dark text-decoration-none"
@@ -52,7 +52,7 @@ export default function Footer() {
                             </p>
                         </div>
 
-                        <div className="col-md-3 p-4 text-center text-md-start">
+                        <div className="col-md-3 p-4 text-center text-md-left">
                             <p className="fs-5 fw-medium" style={{font: 'Nunito', color: '#FB9D00'}}>Legal</p>
                             <p className="fs-6 fw-normal">
                                 <Link className="text-dark text-decoration-none" to="#" style={{font: 'Nunito'}}>Terms &
@@ -65,12 +65,12 @@ export default function Footer() {
 
                             <p className="mt-3 fs-5 fw-medium" style={{font: 'Nunito', color: '#FB9D00'}}>Payment
                                 Accepted</p>
-                            <div className="d-flex justify-content-center justify-content-md-start">
+                            <div className="d-flex justify-content-center align-items-center">
                                 <img src={visa} className="img-fluid" alt="Visa"
                                      style={{height: '18px'}}/>
                                 <img src={mastercard} className="img-fluid mx-3" alt="Mastercard"
                                      style={{height: '18px'}}/>
-                                <img src={applepay} className="img-fluid me-auto" alt="Apple Pay"
+                                <img src={applepay} className="img-fluid me-md-auto" alt="Apple Pay"
                                      style={{height: '18px'}}/>
                             </div>
                         </div>
