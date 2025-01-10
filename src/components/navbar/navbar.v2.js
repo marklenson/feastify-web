@@ -24,7 +24,7 @@ export default function Navigation() {
                         <p className="text-white fs-5 fw-bold m-0" style={{font: 'Fredoka'}}> The Feastify</p>
                     </Link>
 
-                    <Navbar.Toggle aria-controls="basic-navbar-nav border-0"/>
+                    <Navbar.Toggle className='bg-white rounded-3 border-0' aria-controls="basic-navbar-nav"/>
 
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto align-items-center">
