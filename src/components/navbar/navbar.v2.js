@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Container, Modal, Nav, Navbar} from 'react-bootstrap';
+import {Nav, Navbar} from 'react-bootstrap';
 import logo from "../../assets/logo/img.png";
 
 const chefRegister = "https://docs.google.com/forms/d/e/1FAIpQLSc7dq4kQOYNrF9QIdwiV_Hi0_OEBYUenxwxUMJUvcEJXdTGcg/viewform?usp=dialog"
