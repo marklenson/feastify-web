@@ -25,7 +25,7 @@ const calendlyLink = "https://calendly.com/marklenson/30min"
 export default function AboutUs() {
     return (
         <>
-            <section className="container-xxl mb-5 d-flex flex-column align-items-center">
+            <section className="container mb-5 d-flex flex-column align-items-center">
                 <p className="mt-4 display-4 fw-bold text-center text-capitalize">
 
                     Where <span style={{color: '#FB9D00', fontWeight: '550'}}> Passion </span>
@@ -42,7 +42,7 @@ export default function AboutUs() {
                 </Link>
             </section>
 
-            <section className="container-xxl mt-4 mb-5">
+            <section className="container mt-4 mb-5">
                 <div className="row">
                     <div className="col-md-3 rounded-4 p-1 overflow-hidden">
                         <div className="rounded-4" style={{
@@ -79,7 +79,7 @@ export default function AboutUs() {
                 </div>
             </section>
 
-            <section className="container-xxl mt-4 mb-5 bg-black rounded-5">
+            <section className="container mt-4 mb-5 bg-black rounded-5">
                 <div className="p-5">
                     <p className='text-center fs-2 text-white mb-3'>
                         Don’t just listen to what they say, try book and experience
@@ -147,7 +147,7 @@ export default function AboutUs() {
             </section>
 
 
-            <section className="container-xxl mb-5 mt-3">
+            <section className="container mb-5 mt-3">
             <p className="text-center fw-medium fs-1 text-capitalize" style={{ font:'Nunito'}}>
 
                     Our services at a glance
@@ -227,7 +227,7 @@ export default function AboutUs() {
                 </div>
             </section>
 
-            <section className="container-xxl mb-5 mt-4">
+            <section className="container mb-5 mt-4">
                 <p className="text-center fw-medium fs-1 text-capitalize" style={{font: 'Nunito'}}>
                     A Taste of What We Deliver
                 </p>
@@ -319,7 +319,7 @@ export default function AboutUs() {
                 </div>
             </section>
 
-            <section className="container-xxl mb-5 mt-4 bg-black rounded-4">
+            <section className="container mb-5 mt-4 bg-black rounded-4">
                 <div className="d-flex flex-column align-items-center p-5 m-3">
                     <p className="fs-1 fw-medium text-white text-center text-capitalize" style={{fontFamily: 'Nunito'}}>
                         Lets talk <span style={{color: '#FB9D00'}}>Food and Events</span>

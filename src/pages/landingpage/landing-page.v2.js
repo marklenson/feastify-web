@@ -1,1033 +1,723 @@
-import React, { useRef } from "react";
+import React, {useRef} from 'react';
 // import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 // import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
-import col1a from "../../assets/images/img-col-1.png";
-import col2a from "../../assets/images/img-col-2.png";
-import col3a from "../../assets/images/img-col-3.png";
-import col4a from "../../assets/images/img-col-4.png";
-import chef1 from "../../assets/images/chef-1.png";
-import chef2 from "../../assets/images/chef-2.png";
-import chef3 from "../../assets/images/chef-3.png";
-import chef4 from "../../assets/images/chef-4.png";
-import brand1 from "../../assets/images/brand-1.png";
-import brand2 from "../../assets/images/brand-2.png";
-import brand3 from "../../assets/images/brand-7.png";
-import brand4 from "../../assets/images/brand-4.png";
-import brand5 from "../../assets/images/brand-5.png";
-import brand6 from "../../assets/images/brand-6.png";
+import {Link} from 'react-router-dom'
+import col1a from '../../assets/images/img-col-1.png';
+import col2a from '../../assets/images/img-col-2.png';
+import col3a from '../../assets/images/img-col-3.png';
+import col4a from '../../assets/images/img-col-4.png';
+import chef1 from '../../assets/images/chef-1.png';
+import chef2 from '../../assets/images/chef-2.png';
+import chef3 from '../../assets/images/chef-3.png';
+import chef4 from '../../assets/images/chef-4.png';
+import brand1 from '../../assets/images/brand-1.png';
+import brand2 from '../../assets/images/brand-2.png';
+import brand3 from '../../assets/images/brand-7.png';
+import brand4 from '../../assets/images/brand-4.png';
+import brand5 from '../../assets/images/brand-5.png';
+import brand6 from '../../assets/images/brand-6.png';
 import useScrollTriggeredCountUp from "../../components/useScrollTriggeredCountUp";
 
-const chefBooking =
-  "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform";
-const eventData =
-  "https://docs.google.com/forms/d/e/1FAIpQLSc4GleU82zhAag3Ani21hHvFxpUqdDucP1FBNg3jsQB1zN4Tg/viewform";
-const whatsappContact = "wa.link/9yfb0t";
-const callContact = "tel:0711749149";
-const emailContact = "mailto:hi@thefeastify.com";
+const chefBooking = "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform"
+const eventData = "https://docs.google.com/forms/d/e/1FAIpQLSc4GleU82zhAag3Ani21hHvFxpUqdDucP1FBNg3jsQB1zN4Tg/viewform"
+const whatsappContact = "wa.link/9yfb0t"
+const callContact = "tel:0711749149"
+const emailContact = "mailto:hi@thefeastify.com"
 
 export default function LandingPage() {
-  const corporateEventsRef = useRef(null);
-  const privateEventsRef = useRef(null);
-  const fiveStarRef = useRef(null);
-  const dishesServedRef = useRef(null);
-  const clientsRef = useRef(null);
-  const countCorporate = useScrollTriggeredCountUp(corporateEventsRef, 124);
-  const countPrivate = useScrollTriggeredCountUp(privateEventsRef, 106);
-  const countFiveStar = useScrollTriggeredCountUp(fiveStarRef, 1);
-  const dishesCount = useScrollTriggeredCountUp(dishesServedRef, 8);
-  const clientsCount = useScrollTriggeredCountUp(clientsRef, 98);
+    const corporateEventsRef = useRef(null);
+    const privateEventsRef = useRef(null);
+    const fiveStarRef = useRef(null);
+    const dishesServedRef = useRef(null);
+    const clientsRef = useRef(null);
+    const countCorporate = useScrollTriggeredCountUp(corporateEventsRef, 124);
+    const countPrivate = useScrollTriggeredCountUp(privateEventsRef, 106);
+    const countFiveStar = useScrollTriggeredCountUp(fiveStarRef, 1);
+    const dishesCount = useScrollTriggeredCountUp(dishesServedRef, 8);
+    const clientsCount = useScrollTriggeredCountUp(clientsRef, 98);
 
-  useScrollTriggeredCountUp(corporateEventsRef, 124);
-  useScrollTriggeredCountUp(privateEventsRef, 106);
-  useScrollTriggeredCountUp(fiveStarRef, 1);
-  useScrollTriggeredCountUp(dishesServedRef, 8);
-  useScrollTriggeredCountUp(clientsRef, 98);
+    useScrollTriggeredCountUp(corporateEventsRef, 124);
+    useScrollTriggeredCountUp(privateEventsRef, 106);
+    useScrollTriggeredCountUp(fiveStarRef, 1);
+    useScrollTriggeredCountUp(dishesServedRef, 8);
+    useScrollTriggeredCountUp(clientsRef, 98);
 
-  return (
-    <>
-      <section
-        className="container-xxl d-flex flex-column align-items-center"
-        style={{ height: "auto" }}
-      >
-        <p className="mt-4 display-4 fw-bold text-center text-capitalize">
-          Your{" "}
-          <span style={{ color: "#FB9D00", fontWeight: "550" }}>Event</span>,
-          Our{" "}
-          <span style={{ color: "#FB9D00", fontWeight: "550" }}>Culinary</span>{" "}
-          Magic!
-        </p>
-        <p className="fs-5 text-center mt-3" style={{ font: "Nunito" }}>
-          “Elevate your event with unforgettable dishes and seamless service. We
-          make every corporate and private gatherings extraordinary with a touch
-          of premium culinary magic.”
-        </p>
+    return (
+        <>
 
-        <Link
-          to={chefBooking}
-          className="btn bg-black text-white px-5 py-3 rounded-pill mt-3 mb-4 fs-5"
-          style={{ fontFamily: "Nunito" }}
-        >
-          Book Event Catering
-        </Link>
-      </section>
+            <section className="container-xxl d-flex flex-column align-items-center" style={{height: 'auto'}}>
+                <p className="mt-4 display-4 fw-bold text-center text-capitalize">
+                    Your <span style={{color: '#FB9D00', fontWeight: '550'}}>Event</span>
+                    , Our <span style={{color: '#FB9D00', fontWeight: '550'}}>Culinary</span> Magic!
+                </p>
+                <p className="fs-5 text-center mt-3" style={{font: "Nunito"}}>
+                    “Elevate your event with unforgettable dishes and seamless service.
+                    We make every corporate and private gatherings extraordinary with a
+                    touch of premium culinary magic.”
+                </p>
 
-      <section className="container-xxl mt-4 mb-5 w-100">
-        <div className="row">
-          <div className="col-md-3 rounded-4 p-1 overflow-hidden">
-            <div
-              className="rounded-4"
-              style={{
-                backgroundImage: `url(${col1a})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "16rem",
-              }}
-            />
-          </div>
-          <div className="col-md-3 rounded-4 p-1 overflow-hidden">
-            <div
-              className="rounded-4"
-              style={{
-                backgroundImage: `url(${col2a})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "16rem",
-              }}
-            />
-          </div>
-          <div className="col-md-3 rounded-4 p-1 overflow-hidden">
-            <div
-              className="rounded-4"
-              style={{
-                backgroundImage: `url(${col3a})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "16rem",
-              }}
-            />
-          </div>
-          <div className="col-md-3 rounded-4 p-1 overflow-hidden">
-            <div
-              className="rounded-4"
-              style={{
-                backgroundImage: `url(${col4a})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "16rem",
-              }}
-            />
-          </div>
-        </div>
-      </section>
+                <Link to={chefBooking} className="btn bg-black text-white px-5 py-3 rounded-pill mt-3 mb-4 fs-5"
+                      style={{fontFamily: 'Nunito'}}>
+                    Book Event Catering
+                </Link>
 
-      <section className="container-xxl mt-3 mb-5 bg-black rounded-4">
-        <div className="row p-3">
-          <div className="col" ref={corporateEventsRef}>
-            <p
-              className="fs-2 fw-medium text-center mb-0"
-              style={{
-                font: "Nunito",
-                color: "#FB9D00",
-              }}
-            >
-              {countCorporate}+
-            </p>
-            <p
-              className="fs-6 text-white text-center"
-              style={{ font: "Nunito" }}
-            >
-              Corporate Events
-              <br />
-              Catered Perfectly
-            </p>
-          </div>
-          <div className="col" ref={privateEventsRef}>
-            <p
-              className="fs-2 fw-medium text-center mb-0"
-              style={{
-                font: "Nunito",
-                color: "#FB9D00",
-              }}
-            >
-              {countPrivate}+
-            </p>
-            <p
-              className="fs-6 text-white text-center"
-              style={{ font: "Nunito" }}
-            >
-              Private Events
-              <br />
-              Catered Perfectly
-            </p>
-          </div>
-          <div className="col" ref={fiveStarRef}>
-            <p
-              className="fs-2 fw-medium text-center mb-0"
-              style={{
-                font: "Nunito",
-                color: "#FB9D00",
-              }}
-            >
-              {countFiveStar}k+
-            </p>
-            <p
-              className="fs-6 text-white text-center"
-              style={{ font: "Nunito" }}
-            >
-              Five Star Private
-              <br />
-              Chefs Onboard
-            </p>
-          </div>
-          <div className="col" ref={dishesServedRef}>
-            <p
-              className="fs-2 fw-medium text-center mb-0"
-              style={{
-                font: "Nunito",
-                color: "#FB9D00",
-              }}
-            >
-              {dishesCount}k+
-            </p>
-            <p
-              className="fs-6 text-white text-center"
-              style={{ font: "Nunito" }}
-            >
-              Dishes Served
-              <br />
-              With Passion
-            </p>
-          </div>
-          <div className="col" ref={clientsRef}>
-            <p
-              className="fs-2 fw-medium text-center mb-0"
-              style={{
-                font: "Nunito",
-                color: "#FB9D00",
-              }}
-            >
-              {clientsCount}%
-            </p>
-            <p
-              className="fs-6 text-white text-center"
-              style={{ font: "Nunito" }}
-            >
-              Of Our Clients
-              <br />
-              Recommend Us
-            </p>
-          </div>
-        </div>
-      </section>
+                <div className="container-xxl mt-4 mb-5 w-100">
 
-      <section className="container-xxl mt-5 mb-5">
-        <p
-          className="fs-1 fw-bold text-center text-capitalize"
-          style={{ font: "Nunito" }}
-        >
-          A taste of the talent we offer
-        </p>
-        <div className="row">
-          <div
-            className="col-md-3 d-flex flex-column mb-2"
-            style={{ height: "35rem" }}
-          >
-            <div
-              className="rounded-4 mb-3"
-              style={{
-                backgroundImage: `url(${chef1})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "20rem",
-              }}
-            />
-            <p
-              className="fs-5 text-center fw-medium my-0"
-              style={{ font: "Nunito" }}
-            >
-              Chef Elena Nkurumah
-            </p>
-            <p
-              className="fs-5 text-center text-capitalize mt-0 mb-3"
-              style={{ font: "Nunito", color: "#FB9D00" }}
-            >
-              West African & Caribbean Fusion
-            </p>
-            <p
-              className="fs-6 text-center mt-0 mb-3"
-              style={{ font: "Nunito" }}
-            >
-              Food is a bridge between cultures, and I’m here to bring those
-              worlds together on your plate.
-            </p>
-
-            <Link
-              to={chefBooking}
-              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto"
-            >
-              Book A private chef
-            </Link>
-          </div>
-          <div
-            className="col-md-3 d-flex flex-column mb-2"
-            style={{ height: "35rem" }}
-          >
-            <div
-              className="rounded-4 mb-3"
-              style={{
-                backgroundImage: `url(${chef2})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "20rem",
-              }}
-            />
-            <p
-              className="fs-5 text-center fw-medium my-0"
-              style={{ font: "Nunito" }}
-            >
-              Chef Zara Obasi
-            </p>
-            <p
-              className="fs-5 text-center text-capitalize mt-0 mb-3"
-              style={{ font: "Nunito", color: "#FB9D00" }}
-            >
-              Plant-Based Gourmet Cuisine
-            </p>
-            <p
-              className="fs-6 text-center mt-0 mb-3"
-              style={{ font: "Nunito" }}
-            >
-              Creating dishes that celebrate nature’s bounty is my way of making
-              every meal a celebration.
-            </p>
-
-            <Link
-              to={chefBooking}
-              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto"
-            >
-              Book A private chef
-            </Link>
-          </div>
-          <div
-            className="col-md-3 d-flex flex-column mb-2"
-            style={{ height: "35rem" }}
-          >
-            <div
-              className="rounded-4 mb-3"
-              style={{
-                backgroundImage: `url(${chef3})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "20rem",
-              }}
-            />
-            <p
-              className="fs-5 text-center fw-medium my-0"
-              style={{ font: "Nunito" }}
-            >
-              Chef Sophia Martins
-            </p>
-            <p
-              className="fs-5 text-center text-capitalize mt-0 mb-3"
-              style={{ font: "Nunito", color: "#FB9D00" }}
-            >
-              Mediterranean Cuisine
-            </p>
-            <p className="fs-6 text-center" style={{ font: "Nunito" }}>
-              To me, food is an art form, and every meal should be as beautiful
-              as it is delicious.
-            </p>
-
-            <Link
-              to={chefBooking}
-              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto"
-            >
-              Book A private chef
-            </Link>
-          </div>
-          <div
-            className="col-md-3 d-flex flex-column mb-2"
-            style={{ height: "35rem" }}
-          >
-            <div
-              className="rounded-4 mb-3"
-              style={{
-                backgroundImage: `url(${chef4})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "20rem",
-              }}
-            />
-            <p
-              className="fs-5 text-center fw-medium my-0"
-              style={{ font: "Nunito" }}
-            >
-              Chef Leila Abdallah
-            </p>
-            <p
-              className="fs-5 text-center text-capitalize mt-0 mb-3"
-              style={{ font: "Nunito", color: "#FB9D00" }}
-            >
-              Africa Fusion Cuisine
-            </p>
-            <p className="fs-6 text-center" style={{ font: "Nunito" }}>
-              Cooking is storytelling, and every dish shares a chapter of
-              culture and passion.
-            </p>
-
-            <Link
-              to={chefBooking}
-              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto"
-            >
-              Book A private chef
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="container-xxl mt-5 mb-5">
-        <p
-          className="fs-1 fw-bold text-center text-capitalize"
-          style={{ font: "Nunito" }}
-        >
-          Inspired by brands that redefine excellence
-        </p>
-        <p className="fs-6 text-muted text-center" style={{ font: "Nunito" }}>
-          Brands shown do not imply affiliation or endorsement, they inspire us
-          alot.
-        </p>
-        <div className="row p-3">
-          <div
-            style={{
-              display: "flex",
-              overflowX: "auto",
-              whiteSpace: "nowrap",
-              animation: "scroll 10s linear infinite",
-            }}
-          >
-            <div className="col-md-2">
-              <div
-                style={{
-                  backgroundImage: `url(${brand1})`,
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  height: "10rem",
-                }}
-              />
-            </div>
-            <div className="col-md-2">
-              <div
-                style={{
-                  backgroundImage: `url(${brand2})`,
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  height: "10rem",
-                }}
-              />
-            </div>
-            <div className="col-md-2">
-              <div
-                style={{
-                  backgroundImage: `url(${brand3})`,
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  height: "10rem",
-                }}
-              />
-            </div>
-            <div className="col-md-2">
-              <div
-                style={{
-                  backgroundImage: `url(${brand4})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  height: "10rem",
-                }}
-              />
-            </div>
-            <div className="col-md-2">
-              <div
-                style={{
-                  backgroundImage: `url(${brand5})`,
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  height: "10rem",
-                }}
-              />
-            </div>
-            <div className="col-md-2">
-              <div
-                style={{
-                  backgroundImage: `url(${brand6})`,
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  height: "10rem",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="container-xxl mt-5 mb-5 bg-black rounded-4">
-        <div className="d-flex flex-column align-items-center p-5 m-3">
-          <p
-            className="fs-1 fw-bold text-white text-center"
-            style={{ font: "Nunito" }}
-          >
-            Delight in Every Bite,{" "}
-            <span style={{ color: "#FB9D00" }}>Every Occasion.</span>
-          </p>
-          <p className="fs-5 text-white text-center" style={{ font: "Nunito" }}>
-            Our chefs pride themselves on offering a premium catering experience
-            with
-            <br />
-            colorful, modern, and imaginative dishes, including corporate and
-            event
-            <br />
-            catering
-          </p>
-          <Link
-            to={chefBooking}
-            className="btn bg-white text-black px-5 py-3 fw-medium rounded-pill"
-          >
-            Book Us Now
-          </Link>
-        </div>
-      </section>
-
-      <section className="container-xxl mt-4" id="faq-section">
-        <p
-          className="fs-1 text-center text-capitalize fw-medium mt-5"
-          style={{ font: "Nunito" }}
-        >
-          Frequently Asked Questions
-        </p>
-        <div className="row mb-5">
-          <div className="col-md-6">
-            <div className="accordion accordion-flush" id="accordionLeft">
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingOne">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                    style={{ font: "Nunito" }}
-                  >
-                    What does a private chef service include in Nairobi?
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionLeft"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      The Feastify private chef service includes everything
-                      necessary to enjoy a personalized dining experience at
-                      home.
-                      <br />
-                      <br />
-                      This includes:
-                      <ul>
-                        <li>
-                          Customization of a menu based on your preferences;
-                        </li>
-                        <li>Purchase of ingredients;</li>
-                        <li>Preparation of the menu at your home;</li>
-                        <li>Complete table service;</li>
-                        <li>
-                          Set up and cleaning of the kitchen and used spaces.
-                        </li>
-                      </ul>
-                      Please note that tableware and glassware are not included.
-                      Gratuity is entirely at your discretion.
-                    </p>
-                  </div>
+                    <div className="row mx-auto">
+                        <div className="col-md-3 rounded-4 p-1 overflow-hidden">
+                            <div className="rounded-4" style={{
+                                backgroundImage: `url(${col1a})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                height: '16rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-3 rounded-4 p-1 overflow-hidden">
+                            <div className="rounded-4" style={{
+                                backgroundImage: `url(${col2a})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                height: '16rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-3 rounded-4 p-1 overflow-hidden">
+                            <div className="rounded-4" style={{
+                                backgroundImage: `url(${col3a})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                height: '16rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-3 rounded-4 p-1 overflow-hidden">
+                            <div className="rounded-4" style={{
+                                backgroundImage: `url(${col4a})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                height: '16rem'
+                            }}/>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingTwo">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                    style={{ font: "Nunito" }}
-                  >
-                    How much does a private chef cost in Nairobi?
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionLeft"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      The price of renting a chef in Nairobi can vary depending
-                      on the specifics, but smaller groups tend to have a
-                      slightly different price per person compared to larger
-                      gatherings.
-                      <br />
-                      <br />
-                      Booking prices range from 11,000 KSH to 25,000 KSH.
-                      <ul>
-                        <li>
-                          For groups of 13 people or more, the price is 11,000
-                          KSH per person.
-                        </li>
-                        <li>
-                          For groups of 7 to 12 people, the cost is 13,000 KSH
-                          per person.
-                        </li>
-                        <li>
-                          For groups of 3 to 6 people, the rate is 15,000 KSH
-                          per person
-                        </li>
-                        <li>
-                          For 2 people, the price is 17,000 KSH per person.
-                        </li>
-                      </ul>
-                      Seasonal ingredients, your location, and how soon you book
-                      also affect the final price. If you're interested in
-                      getting free quotes with no obligation, fill out our form
-                      and let the best chefs near you send unique proposals for
-                      your event. `
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingThree">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                    style={{ font: "Nunito" }}
-                  >
-                    How can I hire a private chef in Nairobi?
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionLeft"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      Booking is easy!
-                      <br />
-                      <br />
-                      Just tell us the date of your event, number of guests,
-                      dietary preferences and any allergies, and a few details
-                      about your kitchen.
-                      <br />
-                      <br />
-                      Within a few minutes, you'll receive customized menus from
-                      our team curated by qualified chefs.
-                      <br />
-                      <br />
-                      Our team is open to modify menus, discuss pricing, or get
-                      answers to any questions you might have. Once you've found
-                      the perfect menu, finalize your reservation online.
-                      <br />
-                      <br />
-                      We'll then provide the private chef’s service and fresh
-                      ingredients on the said date to your location.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingFour">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                    style={{ font: "Nunito" }}
-                  >
-                    How can I find a private chef near me?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionLeft"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      There are currently 200+ chefs available in Nairobi. Fill
-                      out a form specifying your needs and the date.
-                      <br />
-                      <br />
-                      The Feastify will connect you with the best available
-                      chefs in Nairobi who will satisfy your appetite
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingFive">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                    style={{ font: "Nunito" }}
-                  >
-                    Is there a maximum number of guests for a private chef
-                    service?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#accordionLeft"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      While there's no strict limit on guest count, private chef
-                      experiences are designed to create a more intimate
-                      atmosphere, perfect for gatherings of friends and family.
-                      <br />
-                      <br />
-                      Since most homes have limited space to accommodate large
-                      groups, parties typically don't exceed 20 people.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingSix">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                    style={{ font: "Nunito" }}
-                  >
-                    Why does The Feastify charge a service fee?
-                  </button>
-                </h2>
-                <div
-                  id="collapseSix"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingSix"
-                  data-bs-parent="#accordionLeft"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      The fee is used to maintain the website, to continuously
-                      improve it and of course to offer you the best possible
-                      customer service.
-                      <br />
-                      <br />
-                      We do our best to provide you with authentic private
-                      chefs.
-                      <br />
-                      <br />
-                      We are very price transparent on every cost incurred. The
-                      service fee allows us to pay our salaries and keep us
-                      going :)
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            </section>
 
-          <div className="col-md-6">
-            <div className="accordion accordion-flush" id="accordionRight">
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingSeven">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSeven"
-                    aria-expanded="false"
-                    aria-controls="collapseSeven"
-                    style={{ font: "Nunito" }}
-                  >
-                    Need Catering Services for your event?
-                  </button>
-                </h2>
-                <div
-                  id="collapseSeven"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingSeven"
-                  data-bs-parent="#accordionRight"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      <strong>Call us </strong>
-                      <a
-                        href={callContact}
-                        className="text-decoration-none"
-                        style={{ color: "#FB9D00" }}
-                      >
-                        0711749149
-                      </a>
-                      <br />
-                      <strong>Email us </strong>
-                      <a
-                        href={emailContact}
-                        className="text-decoration-none"
-                        style={{ color: "#FB9D00" }}
-                      >
-                        hi@thefeastify.com
-                      </a>
-                      <br />
-                      <strong>Fill out </strong>
-                      <a
-                        href={eventData}
-                        className="text-decoration-none"
-                        style={{ color: "#FB9D00" }}
-                      >
-                        {" "}
-                        our event booking form
-                      </a>
-                      <br />
-                      <br />
-                      In order to best help you with an accurate quote we will
-                      need to ask a few questions which we can do over the
-                      phone, email, online form, google meet or in person if you
-                      wish.
-                    </p>
-                  </div>
+            <section className="container-xxl mt-3 mb-5 bg-black rounded-4">
+                <div className="row p-3">
+                    <div className="col" ref={corporateEventsRef}>
+                        <p className="fs-2 fw-medium text-center mb-0" style={{
+                            font: 'Nunito',
+                            color: '#FB9D00'
+                        }}>{countCorporate}+</p>
+                        <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Corporate Events<br/>Catered
+                            Perfectly</p>
+                    </div>
+                    <div className="col" ref={privateEventsRef}>
+                        <p className="fs-2 fw-medium text-center mb-0" style={{
+                            font: 'Nunito',
+                            color: '#FB9D00'
+                        }}>{countPrivate}+</p>
+                        <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Private Events<br/>Catered
+                            Perfectly</p>
+                    </div>
+                    <div className="col" ref={fiveStarRef}>
+                        <p className="fs-2 fw-medium text-center mb-0" style={{
+                            font: 'Nunito',
+                            color: '#FB9D00'
+                        }}>{countFiveStar}k+</p>
+                        <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Five Star Private<br/>Chefs
+                            Onboard</p>
+                    </div>
+                    <div className="col" ref={dishesServedRef}>
+                        <p className="fs-2 fw-medium text-center mb-0" style={{
+                            font: 'Nunito',
+                            color: '#FB9D00'
+                        }}>{dishesCount}k+</p>
+                        <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Dishes Served<br/>With
+                            Passion</p>
+                    </div>
+                    <div className="col" ref={clientsRef}>
+                        <p className="fs-2 fw-medium text-center mb-0" style={{
+                            font: 'Nunito',
+                            color: '#FB9D00'
+                        }}>{clientsCount}%</p>
+                        <p className="fs-6 text-white text-center" style={{font: 'Nunito'}}>Of Our Clients<br/>Recommend
+                            Us</p>
+                    </div>
                 </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingEight">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseEight"
-                    aria-expanded="false"
-                    aria-controls="collapseEight"
-                    style={{ font: "Nunito" }}
-                  >
-                    How much food will I need for the event?
-                  </button>
-                </h2>
-                <div
-                  id="collapseEight"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingEight"
-                  data-bs-parent="#accordionRight"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      This depends on a few factors including the occasion, time
-                      and duration of the function, whether the guests are big
-                      or small eaters and your budget.
-                      <br />
-                      <br />
-                      Most of our menus are priced per person and our
-                      experienced staff at feastify will work with you.
-                      <br />
-                      <br />
-                      Prior Service day we will make sure you have the right
-                      amount and variety of food for your intended function, we
-                      offer to shop for the freshest ingredients on your behalf
-                      as well.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingNine">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseNine"
-                    aria-expanded="false"
-                    aria-controls="collapseNine"
-                    style={{ font: "Nunito" }}
-                  >
-                    How soon do I need to book and give final numbers for my
-                    event?
-                  </button>
-                </h2>
-                <div
-                  id="collapseNine"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingNine"
-                  data-bs-parent="#accordionRight"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      For buffet and service events, we at feastify require
-                      final numbers 12 days prior to the function. For platters
-                      and finger food drop off we require 7 days prior.
-                      <br />
-                      <br />
-                      At Feastify we do our best to accommodate any late/last
-                      minute bookings as we understand some things are not
-                      planned.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingTen">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTen"
-                    aria-expanded="false"
-                    aria-controls="collapseTen"
-                    style={{ font: "Nunito" }}
-                  >
-                    What if I need to cancel my booking?
-                  </button>
-                </h2>
-                <div
-                  id="collapseTen"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingTen"
-                  data-bs-parent="#accordionRight"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      If a cancellation is made{" "}
-                      <strong>less than 48 hours</strong> prior the customers
-                      may be liable for 100% of the catering cost.
-                      <br />
-                      <br />
-                      See our General Terms and Conditions for more info.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingEleven">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseEleven"
-                    aria-expanded="false"
-                    aria-controls="collapseEleven"
-                    style={{ font: "Nunito" }}
-                  >
-                    Do I need to pay a deposit?
-                  </button>
-                </h2>
-                <div
-                  id="collapseEleven"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingEleven"
-                  data-bs-parent="#accordionRight"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      A <strong>60% deposit</strong> is{" "}
-                      <strong>required</strong> to secure your booking with
-                      feastify.
-                      <br />
-                      <br />
-                      <strong>Full payment</strong> is required{" "}
-                      <strong>4 days prior</strong>.
-                      <br />
-                      <br />
-                      Purchase orders will be accepted from Government
-                      Departments and payment terms agreed.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingTwelve">
-                  <button
-                    className="accordion-button collapsed fs-5"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwelve"
-                    aria-expanded="false"
-                    aria-controls="collapseTwelve"
-                    style={{ font: "Nunito" }}
-                  >
-                    How do I pay?
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwelve"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingTwelve"
-                  data-bs-parent="#accordionRight"
-                >
-                  <div className="accordion-body">
-                    <p style={{ font: "Nunito" }}>
-                      You can easily pay your bill online. Please ask for our
-                      bank details.
-                      <br />
-                      <br />
-                      We also accept cash, EFT transfer or Visa/MasterCard
-                      payment.
-                      <br />
-                      <br />
-                      See our General Terms and Conditions for more info.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
 
-      <section className="container-xxl mt-5 mb-5 bg-black rounded-4">
-        <div className="d-flex flex-column align-items-center p-5 m-3">
-          <p
-            className="fs-3 text-center text-uppercase"
-            style={{ font: "Nunito", color: "#FB9D00" }}
-          >
-            Let us make your event memorable
-          </p>
-          <p className="fs-5 text-white text-center" style={{ font: "Nunito" }}>
-            Can’t find the answer you’re looking for? Please chat to our
-            friendly team.
-          </p>
-          <Link
-            to={whatsappContact}
-            className="btn bg-white text-black px-5 py-3 fw-medium rounded-pill"
-          >
-            Chat With Us
-          </Link>
-        </div>
-      </section>
-    </>
-  );
+            <section className="container-xxl mt-5 mb-5">
+                <p className="fs-1 fw-bold text-center text-capitalize" style={{font: 'Nunito'}}>
+                    A taste of the talent we offer
+                </p>
+                <div className="row">
+                    <div className="col-md-3 d-flex flex-column mb-2" style={{height: '35rem'}}>
+                        <div className="rounded-4 mb-3" style={{
+                            backgroundImage: `url(${chef1})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            height: '20rem'
+                        }}/>
+                        <p className="fs-5 text-center fw-medium my-0" style={{font: 'Nunito'}}>
+                            Chef Elena Nkurumah
+                        </p>
+                        <p className="fs-5 text-center text-capitalize mt-0 mb-3"
+                           style={{font: 'Nunito', color: '#FB9D00'}}>
+                            West African & Caribbean Fusion
+                        </p>
+                        <p className="fs-6 text-center mt-0 mb-3" style={{font: 'Nunito'}}>
+                            Food is a bridge between cultures, and I’m here to bring those worlds together on your
+                            plate.
+                        </p>
+
+                        <Link to={chefBooking}
+                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto">
+                            Book A private chef
+                        </Link>
+                    </div>
+                    <div className="col-md-3 d-flex flex-column mb-2" style={{height: '35rem'}}>
+                        <div className="rounded-4 mb-3" style={{
+                            backgroundImage: `url(${chef2})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            height: '20rem'
+                        }}/>
+                        <p className="fs-5 text-center fw-medium my-0" style={{font: 'Nunito'}}>
+                            Chef Zara Obasi
+                        </p>
+                        <p className="fs-5 text-center text-capitalize mt-0 mb-3"
+                           style={{font: 'Nunito', color: '#FB9D00'}}>
+                            Plant-Based Gourmet Cuisine
+                        </p>
+                        <p className="fs-6 text-center mt-0 mb-3" style={{font: 'Nunito'}}>
+                            Creating dishes that celebrate nature’s bounty is my way of making every meal a celebration.
+                        </p>
+
+                        <Link to={chefBooking}
+                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto">
+                            Book A private chef
+                        </Link>
+                    </div>
+                    <div className="col-md-3 d-flex flex-column mb-2" style={{height: '35rem'}}>
+                        <div className="rounded-4 mb-3" style={{
+                            backgroundImage: `url(${chef3})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            height: '20rem'
+                        }}/>
+                        <p className="fs-5 text-center fw-medium my-0" style={{font: 'Nunito'}}>
+                            Chef Sophia Martins
+                        </p>
+                        <p className="fs-5 text-center text-capitalize mt-0 mb-3"
+                           style={{font: 'Nunito', color: '#FB9D00'}}>
+                            Mediterranean Cuisine
+                        </p>
+                        <p className="fs-6 text-center" style={{font: 'Nunito'}}>
+                            To me, food is an art form, and every meal should be as beautiful as it is delicious.
+                        </p>
+
+                        <Link to={chefBooking}
+                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto">
+                            Book A private chef
+                        </Link>
+                    </div>
+                    <div className="col-md-3 d-flex flex-column mb-2" style={{height: '35rem'}}>
+                        <div className="rounded-4 mb-3" style={{
+                            backgroundImage: `url(${chef4})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            height: '20rem'
+                        }}/>
+                        <p className="fs-5 text-center fw-medium my-0" style={{font: 'Nunito'}}>
+                            Chef Leila Abdallah
+                        </p>
+                        <p className="fs-5 text-center text-capitalize mt-0 mb-3"
+                           style={{font: 'Nunito', color: '#FB9D00'}}>
+                            Africa Fusion Cuisine
+                        </p>
+                        <p className="fs-6 text-center" style={{font: 'Nunito'}}>
+                            Cooking is storytelling, and every dish shares a chapter of culture and passion.
+                        </p>
+
+                        <Link to={chefBooking}
+                              className="btn bg-black text-white px-5 py-3 fw-medium rounded-pill mx-auto text-capitalize mt-auto">
+                            Book A private chef
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <section className="container-xxl mt-5 mb-5">
+                <p className="fs-1 fw-bold text-center text-capitalize" style={{font: 'Nunito'}}>
+
+                    Inspired by brands that redefine excellence
+                </p>
+                <p className="fs-6 text-muted text-center" style={{font: 'Nunito'}}>
+                    Brands shown do not imply affiliation or endorsement, they inspire us alot.
+                </p>
+                <div className="row p-3">
+                    <div style={{
+                        display: 'flex',
+                        overflowX: 'auto',
+                        whiteSpace: 'nowrap',
+                        animation: 'scroll 10s linear infinite'
+                    }}>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand1})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand2})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand3})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand4})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand5})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                        <div className="col-md-2">
+                            <div style={{
+                                backgroundImage: `url(${brand6})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                height: '10rem'
+                            }}/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="container-xxl mt-5 mb-5 bg-black rounded-4">
+                <div className="d-flex flex-column align-items-center p-5 m-3">
+                    <p className="fs-1 fw-bold text-white text-center" style={{font: 'Nunito'}}>
+                        Delight in Every Bite, <span style={{color: '#FB9D00'}}>Every Occasion.</span>
+                    </p>
+                    <p className="fs-5 text-white text-center" style={{font: 'Nunito'}}>
+                        Our chefs pride themselves on offering a premium catering experience with<br/>
+                        colorful, modern, and imaginative dishes, including corporate and event<br/>
+                        catering
+                    </p>
+                    <Link to={chefBooking} className="btn bg-white text-black px-5 py-3 fw-medium rounded-pill">
+                        Book Us Now
+                    </Link>
+                </div>
+            </section>
+
+
+            <section className="container-xxl mt-4" id="faq-section">
+                <p className="fs-1 text-center text-capitalize fw-medium mt-5" style={{font: 'Nunito'}}>
+                    Frequently Asked Questions
+                </p>
+                <div className="row mb-5">
+                    <div className="col-md-6">
+                        <div className="accordion accordion-flush" id='accordionLeft'>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingOne">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne" style={{font: 'Nunito'}}>
+                                        What does a private chef service include in Nairobi?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" className="accordion-collapse collapse"
+                                     aria-labelledby="headingOne"
+                                     data-bs-parent="#accordionLeft">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            The Feastify private chef service includes everything necessary to enjoy a
+                                            personalized dining experience at home.<br/>
+                                            <br/>
+                                            This includes:
+                                            <ul>
+                                                <li>Customization of a menu based on your preferences;</li>
+                                                <li>Purchase of ingredients;</li>
+                                                <li>Preparation of the menu at your home;</li>
+                                                <li>Complete table service;</li>
+                                                <li>Set up and cleaning of the kitchen and used spaces.</li>
+                                            </ul>
+                                            Please note that tableware and glassware are not included. Gratuity is
+                                            entirely at your discretion.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingTwo">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo" style={{font: 'Nunito'}}>
+                                        How much does a private chef cost in Nairobi?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" className="accordion-collapse collapse"
+                                     aria-labelledby="headingTwo"
+                                     data-bs-parent="#accordionLeft">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            The price of renting a chef in Nairobi can vary depending on the specifics,
+                                            but smaller groups tend to have a slightly different price per person
+                                            compared to larger gatherings.<br/>
+                                            <br/>
+                                            Booking prices range from 11,000 KSH to 25,000 KSH.
+                                            <ul>
+                                                <li>For groups of 13 people or more, the price is 11,000 KSH per
+                                                    person.
+                                                </li>
+                                                <li>For groups of 7 to 12 people, the cost is 13,000 KSH per person.
+                                                </li>
+                                                <li>For groups of 3 to 6 people, the rate is 15,000 KSH per person</li>
+                                                <li>For 2 people, the price is 17,000 KSH per person.</li>
+                                            </ul>
+                                            Seasonal ingredients, your location, and how soon you book also affect the
+                                            final price. If you're interested in getting free quotes with no obligation,
+                                            fill out our form and let the best chefs near you send unique proposals for
+                                            your event.
+                                            `
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingThree">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree" style={{font: 'Nunito'}}>
+                                        How can I hire a private chef in Nairobi?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" className="accordion-collapse collapse"
+                                     aria-labelledby="headingThree"
+                                     data-bs-parent="#accordionLeft">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            Booking is easy!
+                                            <br/>
+                                            <br/>
+                                            Just tell us the date of your event, number of guests,
+                                            dietary preferences and any allergies, and a few details about your kitchen.
+                                            <br/>
+                                            <br/>
+                                            Within a few minutes, you'll receive customized menus from our team curated
+                                            by qualified chefs.
+                                            <br/>
+                                            <br/>
+                                            Our team is open to modify menus, discuss pricing, or
+                                            get answers to any questions you might have. Once you've found the perfect
+                                            menu, finalize your reservation online.
+                                            <br/>
+                                            <br/>
+                                            We'll then provide the private
+                                            chef’s service and fresh ingredients on the said date to your location.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingFour">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour" style={{font: 'Nunito'}}>
+                                        How can I find a private chef near me?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" className="accordion-collapse collapse"
+                                     aria-labelledby="headingFour"
+                                     data-bs-parent="#accordionLeft">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            There are currently 200+ chefs available in Nairobi. Fill out a form
+                                            specifying your needs and the date.
+                                            <br/>
+                                            <br/>
+                                            The Feastify will connect you with the
+                                            best available chefs in Nairobi who will satisfy your appetite
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingFive">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive" style={{font: 'Nunito'}}>
+                                        Is there a maximum number of guests for a private chef service?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" className="accordion-collapse collapse"
+                                     aria-labelledby="headingFive"
+                                     data-bs-parent="#accordionLeft">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            While there's no strict limit on guest count, private chef experiences are
+                                            designed to create a more intimate atmosphere, perfect for gatherings of
+                                            friends and family.
+                                            <br/>
+                                            <br/>
+                                            Since most homes have limited space to accommodate large
+                                            groups, parties typically don't exceed 20 people.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingSix">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix" style={{font: 'Nunito'}}>
+                                        Why does The Feastify charge a service fee?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" className="accordion-collapse collapse"
+                                     aria-labelledby="headingSix"
+                                     data-bs-parent="#accordionLeft">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            The fee is used to maintain the website, to continuously improve it and of
+                                            course to offer you the best possible customer service.
+                                            <br/>
+                                            <br/>
+                                            We do our best to provide you with authentic private chefs.
+                                            <br/>
+                                            <br/>
+                                            We are very price transparent on
+                                            every cost incurred. The service fee allows us to pay our salaries and keep
+                                            us going :)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-md-6">
+                        <div className="accordion accordion-flush" id='accordionRight'>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingSeven">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSeven" aria-expanded="false"
+                                            aria-controls="collapseSeven" style={{font: 'Nunito'}}>
+                                        Need Catering Services for your event?
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" className="accordion-collapse collapse"
+                                     aria-labelledby="headingSeven"
+                                     data-bs-parent="#accordionRight">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            <strong>Call us </strong>
+                                            <a href={callContact} className="text-decoration-none"
+                                               style={{color: "#FB9D00"}}>0711749149</a>
+                                            <br/>
+                                            <strong>Email us </strong>
+                                            <a href={emailContact} className="text-decoration-none"
+                                               style={{color: "#FB9D00"}}>hi@thefeastify.com</a>
+                                            <br/>
+                                            <strong>Fill out </strong>
+                                            <a href={eventData} className="text-decoration-none"
+                                               style={{color: "#FB9D00"}}> our event booking form</a>
+                                            <br/>
+                                            <br/>
+
+                                            In order to best help you with an accurate quote we will need to ask a few
+                                            questions which we can do over the phone, email, online form, google meet or
+                                            in person if you wish.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingEight">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseEight" aria-expanded="false"
+                                            aria-controls="collapseEight" style={{font: 'Nunito'}}>
+                                        How much food will I need for the event?
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" className="accordion-collapse collapse"
+                                     aria-labelledby="headingEight"
+                                     data-bs-parent="#accordionRight">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            This depends on a few factors including the occasion, time and duration of
+                                            the function, whether the guests are big or small eaters and your budget.
+                                            <br/>
+                                            <br/>
+                                            Most of our menus are priced per person and our experienced staff at
+                                            feastify will work with you.
+
+                                            <br/>
+                                            <br/>
+                                            Prior Service day we will make sure you have the right amount and variety of
+                                            food for your intended function, we offer to shop for the freshest
+                                            ingredients on your behalf as well.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingNine">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseNine" aria-expanded="false"
+                                            aria-controls="collapseNine" style={{font: 'Nunito'}}>
+                                        How soon do I need to book and give final numbers for my event?
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" className="accordion-collapse collapse"
+                                     aria-labelledby="headingNine"
+                                     data-bs-parent="#accordionRight">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            For buffet and service events, we at feastify require final numbers 12 days
+                                            prior to the function. For platters and finger food drop off we require 7
+                                            days prior.
+                                            <br/>
+                                            <br/>
+                                            At Feastify we do our best to accommodate any late/last minute bookings as
+                                            we understand some things are not planned.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingTen">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTen" aria-expanded="false"
+                                            aria-controls="collapseTen" style={{font: 'Nunito'}}>
+                                        What if I need to cancel my booking?
+                                    </button>
+                                </h2>
+                                <div id="collapseTen" className="accordion-collapse collapse"
+                                     aria-labelledby="headingTen"
+                                     data-bs-parent="#accordionRight">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            If a cancellation is made <strong>less than 48 hours</strong> prior the
+                                            customers may be
+                                            liable for 100% of the catering cost.
+                                            <br/>
+                                            <br/>
+                                            See our General Terms and Conditions
+                                            for more info.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingEleven">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseEleven" aria-expanded="false"
+                                            aria-controls="collapseEleven" style={{font: 'Nunito'}}>
+                                        Do I need to pay a deposit?
+                                    </button>
+                                </h2>
+                                <div id="collapseEleven" className="accordion-collapse collapse"
+                                     aria-labelledby="headingEleven"
+                                     data-bs-parent="#accordionRight">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            A <strong>60% deposit</strong> is <strong>required</strong> to secure your
+                                            booking with feastify.
+                                            <br/>
+                                            <br/>
+                                            <strong>Full payment</strong> is required <strong>4 days prior</strong>.
+                                            <br/>
+                                            <br/>
+                                            Purchase orders will be accepted from Government Departments and payment
+                                            terms agreed.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingTwelve">
+                                    <button className="accordion-button collapsed fs-5" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwelve" aria-expanded="false"
+                                            aria-controls="collapseTwelve" style={{font: 'Nunito'}}>
+                                        How do I pay?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwelve" className="accordion-collapse collapse"
+                                     aria-labelledby="headingTwelve"
+                                     data-bs-parent="#accordionRight">
+                                    <div className="accordion-body">
+                                        <p style={{font: 'Nunito'}}>
+                                            You can easily pay your bill online. Please ask for our bank details.
+                                            <br/>
+                                            <br/>
+                                            We also accept cash, EFT transfer or Visa/MasterCard payment.
+                                            <br/>
+                                            <br/>
+                                            See our General Terms and Conditions for more info.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="container-xxl mt-5 mb-5 bg-black rounded-4">
+                <div className="d-flex flex-column align-items-center p-5 m-3">
+                    <p className="fs-3 text-center text-uppercase" style={{font: 'Nunito', color: '#FB9D00'}}>
+                        Let us make your event memorable
+                    </p>
+                    <p className="fs-5 text-white text-center" style={{font: 'Nunito'}}>
+                        Can’t find the answer you’re looking for? Please chat to our friendly team.
+                    </p>
+                    <Link to={whatsappContact} className="btn bg-white text-black px-5 py-3 fw-medium rounded-pill">
+                        Chat With Us
+                    </Link>
+                </div>
+            </section>
+
+        </>
+    )
 }
