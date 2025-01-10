@@ -1,6 +1,4 @@
 import React, {useRef} from 'react';
-// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-// import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {Link} from 'react-router-dom'
 import col1a from '../../assets/images/img-col-1.png';
 import col2a from '../../assets/images/img-col-2.png';
@@ -17,12 +15,7 @@ import brand4 from '../../assets/images/brand-4.png';
 import brand5 from '../../assets/images/brand-5.png';
 import brand6 from '../../assets/images/brand-6.png';
 import useScrollTriggeredCountUp from "../../components/useScrollTriggeredCountUp";
-
-const chefBooking = "https://docs.google.com/forms/d/e/1FAIpQLSdNBp_QsAjRTZUPfWWW5XJRGp9VFBuxiCCcm6irP8BDJFK14g/viewform"
-const eventData = "https://docs.google.com/forms/d/e/1FAIpQLSc4GleU82zhAag3Ani21hHvFxpUqdDucP1FBNg3jsQB1zN4Tg/viewform"
-const whatsappContact = "wa.link/9yfb0t"
-const callContact = "tel:0711749149"
-const emailContact = "mailto:hi@thefeastify.com"
+import {callContact, chefBooking, emailContact, eventData, whatsappContact} from "../../App";
 
 export default function LandingPage() {
     const corporateEventsRef = useRef(null);
