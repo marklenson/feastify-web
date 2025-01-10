@@ -16,7 +16,7 @@ export default function Footer() {
     return (
         <>
             <section>
-                <div className="container-xxl d-flex flex-column">
+                <div className="container d-flex flex-column">
                     <div className="row">
                         <div className="col-md-6 d-flex align-items-center p-2">
                             <img src={footerLogo} alt="Footer Logo" className='mx-auto' style={{
